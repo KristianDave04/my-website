@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Lesson 2 - Unit 3</title>
+  <link rel="stylesheet" href="../Subjects/sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="module-container">
+        <br>
+        <hr>
+        <section>
+                <h3>UNIT III: Introduction to JavaScript</h3><hr>
+                <p><b>1. What is JavaScript?</b><br>
+                * JavaScript (JS) is a high-level, dynamic programming language that is primarily used to
+                create interactive effects within web browsers. It is one ofthe three core technologies of
+                web development alongside HTML and CSS.<br>
+                * JavaScript enables client-side scripting to interact with HTML and CSS, allowing dynamic
+                web content, manipulation of the Document Object Model (DOM), form validation,
+                animations, and much more.<br>
+                * JavaScript is also used for server-side programming (using Node.js) and is part of 
+                fullstack development.</p>
+                <p><b>Why JavaScript?</b><br>
+                * Interactivity: Makes websites interactive (e.g., dropdown menus, sliders, image
+                galleries).<br>
+                * Versatility: Can be used both on the client-side and server-side (Node.js).<br>
+                * Community: JavaScript has a large and active community, with extensive
+                documentation, frameworks (React, Angular, Vue), and libraries (jQuery, Lodash).</p>
+                <p><b>2. Basic Structure of JavaScript</b><br>
+                Script Tags in HTML:<br>
+                • JavaScript code is typically written within `&lt;script&gt;` tags in an HTML file, either
+                inside the `&lt;head&gt;` or just before the closing `&lt;/body&gt;` tag.<br>
+                • Inline JavaScript: Writing JavaScript directly in HTML tags using the `onclick`,
+                `onload`, or other event attributes.</p>
+                <p><b>3. JavaScript Syntax Basics</b><br>
+                Statements and Semicolons:<br>
+                • JavaScript code consists of statements that tellthe browserto perform specific
+                tasks. Each statement usually ends with a semicolon (`;`).</p>
+                <p><b>Basic Data Types in JavaScript:</b><br>
+                <b>1. String:</b> Represents text.<br>
+                * Example: `”Hello World”`<br><br>
+                <b>2. Number:</b> Represents numeric values.<br>
+                * Example: `42`, `3.14`<br><br>
+                <b>3. Boolean:</b> Represents a value of `true` or `false`.<br><br>
+                <b>4. Null:</b> Represents an empty or non-existent value.<br>
+                * Example: `let x = null;`<br><br>
+                <b>5. Undefined:</b> A variable that has been declared but not assigned a value.<br>
+                * Example: `let y;` // y is undefined<br><br>
+                <b>6. Object:</b> A collection of key-value pairs (e.g., `let person = {name: “Alice”, age: 25};`).<br><br>
+                <b>7. Array:</b> A list-like structure.</p>
+                <p>• Example: `let numbers = [1, 2, 3, 4];`</p>
+                <p><b>4. Operators in JavaScript</b><br>
+                Arithmetic Operators<br>
+                • Used for performing mathematical calculations.</p>
+                <table border="1px">
+                    <tr>
+                        <td><b>Operator</b></td>
+                        <td><b>Description</b></td>
+                        <td><b>Example</b></td>
+                    </tr>
+                    <tr>
+                        <td>`+`</td>
+                        <td>Addition</td>
+                        <td>`3 + 2`</td>
+                    </tr>
+                    <tr>
+                        <td>`-`</td>
+                        <td>Subtraction</td>
+                        <td>`5 – 3`</td>
+                    </tr>
+                    <tr>
+                        <td>`*`</td>
+                        <td>Multiplication</td>
+                        <td>`4 * 2`</td>
+                    </tr>
+                    <tr>
+                        <td>`/`</td>
+                        <td>Division</td>
+                        <td>`8 / 2`</td>
+                    </tr>
+                    <tr>
+                        <td>`%`</td>
+                        <td>Modulus (Remainder)</td>
+                        <td>`5 % 2`</td>
+                    </tr>
+                </table>
+                <p><b>Comparison Operators</b><br>
+                • Used to compare two values.</p>
+                <table border="1px">
+                    <tr>
+                        <td><b>Operator</b></td>
+                        <td><b>Description</b></td>
+                        <td><b>Example</b></td>
+                    </tr>
+                    <tr>
+                        <td>`==`</td>
+                        <td>Equalto (value comparison)</td>
+                        <td>`5 == 5` (true)</td>
+                    </tr>
+                    <tr>
+                        <td>`===`</td>
+                        <td>Strict equality (value and type comparison)</td>
+                        <td>`5 === “5”` (false)</td>
+                    </tr>
+                    <tr>
+                        <td>`!=`</td>
+                        <td>Not equalto (value comparison)</td>
+                        <td>`5 != 3` (true)</td>
+                    </tr>
+                    <tr>
+                        <td>`>`</td>
+                        <td>Greater than</td>
+                        <td>`5 > 3` (true)</td>
+                    </tr>
+                    <tr>
+                        <td>`<`</td>
+                        <td>Less than</td>
+                        <td>`3 < 5` (true)</td>
+                    </tr>
+                </table>
+             </section><br><hr>
+            
+        <a href="../Subjects/lesson2.html" id="learn-btn"><h3>Back to Lesson 2</h3></a>
+      </div>
+    </div>
+    <script src="../Subjects/sub.js"></script>
+</body>
+</html>

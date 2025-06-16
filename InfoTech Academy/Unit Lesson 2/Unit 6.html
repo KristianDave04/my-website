@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Lesson 2 - Unit 6</title>
+  <link rel="stylesheet" href="../Subjects/sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="module-container">
+        <br>
+        <hr>
+        <section>
+                <h3>UNIT VI: Web Accessibility (a11y)</h3><hr>
+                <p>• <b>Web accessibility (often abbreviated as a11y)</b> refers to the practice of making websites
+                usable by people of all abilities and disabilities. It involves designing and developing
+                websites in a way that allows all users, including those with visual, auditory, motor, and
+                cognitive disabilities, to access and interact with the content. Web accessibility ensures
+                that a wider audience, including those using assistive technologies like screen readers,
+                voice recognition software, and alternative input devices, can effectively use the website.</p>
+                <p><b>Why Web Accessibility is Important:</b><br>
+                <b>1. Inclusive Design:</b> It ensures that individuals with disabilities can access the content,
+                making the web more inclusive and equitable.<br>
+                <b>2. Legal Compliance:</b> Various regulations and laws, such as the Americans with
+                Disabilities Act (ADA) and Web Content Accessibility Guidelines (WCAG), require websites
+                to be accessible.<br>
+                <b>3. Improved Usability:</b> Accessible websites often offer a better user experience for all
+                users, including those on mobile devices, with slow internet connections, or using 
+                nontraditional input methods.<br>
+                <b>4. Search Engine Optimization (SEO):</b> Accessibility can have a positive effect on SEO.
+                Well-structured content and proper semantic HTML improve how search engines crawl and
+                index your site.</p>
+                <p><b>Principles of Web Accessibility:</b><br>
+                The <b>Web Content Accessibility Guidelines (WCAG)</b>, created by the World Wide Web
+                Consortium (W3C), are the main international standards for web accessibility. The
+                guidelines focus on four main principles known as the FOUR principles:</p>
+                <p><b>1. Perceivable:</b> Information and user interface components must be presented in
+                ways that users can perceive. This includes:<br>
+                * Text alternatives for non-text content (e.g., alt text for images).<br>
+                * Adaptable content that can be presented in different ways (e.g., screen readers, 
+                highcontrast themes).<br>
+                * Accessible multimedia with captions and audio descriptions.<br><br>
+                <b>2. Operable:</b> User interface components and navigation must be operable. This includes:<br>
+                * Providing keyboard accessibility for users who cannot use a mouse.<br>
+                * Allowing sufficient time for users to read and interact with content.<br>
+                * Ensuring users can navigate content and interact with it using assistive technologies.<br><br>
+                <b>3. Understandable:</b> Content and the interface must be understandable. This includes:<br>
+                * Using clear and simple language.<br>
+                * Providing clear instructions and error messages for forms or interactive elements.<br>
+                * Ensuring predictable navigation and behavior on the site.<br><br>
+                <b>4. Robust:</b> Content must be robust enough to work across different devices and
+                technologies, including assistive technologies. This includes:<br>
+                * Using semantic HTML and valid code to improve compatibility with screen readers and
+                other assistive tools.<br>
+                * Ensuring that dynamic content (e.g., JavaScript-driven) is accessible.</p>
+                <p><b>Common Web Accessibility Features</b><br><br>
+                <b>1. Alternative Textfor Images (Alt Text):</b><br>
+                • Text descriptions for images help users who rely on screen readers. The alt attribute
+                should provide a concise description of the image content.<br><br>
+                <b>2. Keyboard Navigation:</b><br>
+                * All interactive elements should be accessible via keyboard (e.g., links, buttons, forms).
+                This allows users who cannot use a mouse to navigate the website.<br>
+                * Ensure the tab order is logical and intuitive, and that all interactive elements are
+                focusable.<br><br>
+                <b>3. Form Labels and Instructions:</b><br>
+                • Each form field should have an associated label to describe its purpose, and error
+                messages should be clear and understandable.<br><br>
+                <b>4. Color Contrast:</b><br>
+                * Ensure thatthere is sufficient contrast between text and background to assist users with
+                visual impairments, including color blindness.<br>
+                * Tools like the Contrast Checker can help verify accessibility compliance for color
+                contrast.<br><br>
+                <b>5. Headings and Semantic HTML:</b><br>
+                * Use semantic HTML (e.g., `&lt;header&gt;`, `&lt;footer&gt;`, `&lt;main&gt;`, `&lt;article&gt;`) and proper
+                heading structures (`&lt;h1&gt;` to `&lt;h6&gt;`) to allow screen readers to identify and navigate
+                content easily.<br>
+                * Organize content logically and use headings hierarchically.<br><br>
+                <b>6. Accessible Multimedia:</b><br>
+                * Provide captions for videos and transcripts for audio content.<br>
+                * Use descriptive audio ortext alternatives for video content that relies on visual
+                information.<br><br>
+                <b>7. Accessible Links:</b><br>
+                • Links should have descriptive text that indicates their purpose, avoiding vague text
+                like “click here.”<br><br>
+                <b>8. Error Handling:</b><br>
+                • Provide users with clear error messages in forms. Ensure users are informed when
+                they make an error</p>
+             </section><br><hr>
+            
+        <a href="../Subjects/lesson2.html" id="learn-btn"><h3>Back to Lesson 2</h3></a>
+      </div>
+    </div>
+    <script src="../Subjects/sub.js"></script>
+</body>
+</html>

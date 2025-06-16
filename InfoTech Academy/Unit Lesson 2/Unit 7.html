@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Lesson 2 - Unit 7</title>
+  <link rel="stylesheet" href="../Subjects/sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="module-container">
+        <br>
+        <hr>
+        <section>
+                <h3>UNIT VII: Deploying Websites: A Comprehensive Guide</h3><hr>
+                <p>Deploying a website involves taking the website that you have developed locally and
+                making it accessible to the public on the internet. The process includes various steps, from
+                choosing a hosting provider to uploading files and configuring the server. Let’s break down
+                the entire process in detail.</p>
+                <p><b>1. Preparation:</b> Finalizing the Website<br>
+                Before deploying, make sure your website is fully ready for deployment. This includes:<br><br>
+                * <b>Testing:</b> Ensure that the website works perfectly on different devices and browsers
+                (cross-browser testing). Test all functionalities, forms, links, and media.<br>
+                * <b>Optimization:</b><br>
+                * Minify HTML, CSS, and JavaScript files to reduce the file size for faster loading times.<br>
+                * Optimize images (using formats like WebP or compressed PNG/JPEG)to ensure they are
+                light and load quickly.<br>
+                * Use responsive design to ensure it looks good on all screen sizes.<br>
+                * <b>Version Control:</b> It’s best practice to use a version control system like **Git** (GitHub,
+                GitLab, Bitbucket) to keep track of your code and collaborate with others.</p>
+                <p><b>2. Choose a Hosting Service</b><br>
+                A hosting service stores your websites files and makes them available to users through the
+                internet. There are different types of hosting, each with different use cases:</p>
+                <p><b>Types of Hosting:</b><br><br>
+                <b>• Shared Hosting:</b> Multiple websites share the same serverresources. It’s cheap but
+                can be slower and less secure.<br>
+                <b>• Examples:</b> Bluehost, HostGator, SiteGround.<br><br>
+                <b>• VPS Hosting:</b> Virtual Private Server, where you share the physical server with others
+                but have dedicated resources. It’s more expensive than shared hosting but offers
+                more control and better performance.<br>
+                <b>• Examples:</b> DigitalOcean, Linode, A2 Hosting.<br><br>
+                <b>• Dedicated Hosting:</b> You have an entire server dedicated to your website. This is
+                ideal for large websites but can be expensive and requires more technical
+                knowledge.<br>
+                <b>• Examples:</b> InMotion Hosting, LiquidWeb.<br><br>
+                <b>• Cloud Hosting:</b> Websites are hosted on multiple servers in the cloud, providing scalability, 
+                flexibility, and high availability. Often used for large, dynamic websites.<br>
+                <b>• Examples:</b> AWS (Amazon Web Services), Google Cloud, Microsoft Azure, and Heroku.<br><br>
+                <b>• Static Website Hosting:</b> If you’re hosting a simple HTML/CSS/JS website, you can
+                use a service that specializes in hosting static websites.<br>
+                <b>• Examples:</b> Netlify, GitHub Pages, Vercel, Firebase Hosting.<br><br>
+                <b>• Managed Hosting:</b> The host manages the server setup, maintenance, and security,
+                ideal for those who want a hassle-free experience.<br>
+                <b>• Examples:</b> WP Engine (for WordPress), Kinsta. </p>
+                <p><b>3. Uploading Your Website Files</b><br>
+                Once your hosting and domain are ready, you need to upload your website files to the
+                hosting server. Here are some common ways to upload files:</p>
+                <p><b>1. FTP (File Transfer Protocol):</b><br>
+                • Use an FTP client like FileZilla to connect to your server and upload files.
+                Your hosting provider should give you the necessary FTP credentials (server address,
+                username, password).<br><br>
+                <b>Steps:</b><br>
+                1. Install an FTP client (e.g., FileZilla).<br>
+                2. Enter the server, username, and password provided by your hosting provider.<br>
+                3. Navigate to the localfolder containing your website files.<br>
+                4. Upload the files to the appropriate directory on the server(usually the public\_html
+                or www folder).</p>
+                <p><b>2. Hosting Control Panel (cPanel):</b><br>
+                • Most shared hosting services offer cPanel, a web-based control panelthat
+                includes a File Manager.<br>
+                * Log in to your hosting account and access cPanel.<br>
+                * Use the File Manager to upload files directly to the server.<br>
+                * You can drag and drop your files or upload them in bulk.</p>
+                <p><b>3. Git Deployment:</b><br>
+                If you use Gitfor version control, you can deploy your website by connecting your
+                repository to your hosting service.<br>
+                * GitHub Pages and Netlify offer direct integration with Git repositories.<br>
+                * SSH and Git Deployment: For more complex hosting (e.g., VPS or cloud hosting), you can
+                push your local repository to a remote server using SSH and Git commands.</p>
+                <p><b>4. Continuous Deployment:</b><br>
+                Some platforms support Continuous Integration/Continuous Deployment (CI/CD), which
+                allows automatic deployment when you push changes to a repository.<br>
+                • Platforms like Netlify, Vercel, and GitHub Actions automatically deploy
+                changes when pushed to the connected GitHub repository.</p>
+                <p><b>5. Configuring Domain and DNS Settings</b><br>
+                Once the files are uploaded, you need to point your domain to the hosting provider. This is
+                done by configuring the DNS (Domain Name System) records.</p>
+                <p><b>Steps:</b>
+                Find the DNS settings: After purchasing your domain, go to your domain registrar’s control panel.</p>
+                <p>• Update the A Record or CNAME:<br>
+                A Record: Points your domain to the IP address of your server.<br>
+                CNAME: Points your subdomain (e.g., www) to your main domain (e.g., yourwebsite.com).</p>
+                <p>• Wait for DNS Propagation: DNS changes can take anywhere from a few minutes to 48
+                hours to propagate worldwide.<br>
+                • Setting Up SSL/TLS (HTTPS)</p>
+                <p>To make your website secure and to improve SEO rankings, it’s essentialto have an SSL
+                certificate, which ensures that your website is served over HTTPS (encrypted
+                communication).</p>
+                <p>• Free SSL: Many hosting providers, like Let’s Encrypt, offerfree SSL certificates.<br>
+                • Paid SSL: If you require more advanced features (e.g., extended validation, insurance),
+                you can purchase SSL certificates.<br>
+                • Automatic SSL (Managed Hosting): Many managed hosting providers offer automatic SSL
+                certificates (e.g., WP Engine, Kinsta).</p>
+                <p><b>To install SSL:</b><br>
+                • For cPanel: Often includes a simple tool for installing SSL certificates.<br>
+                • For Cloud Hosting: Platforms like AWS and Google Cloud provide free SSL certificates via
+                their tools (e.g., AWS ACM or Google Cloud SSL).</p>
+                <p><b>4. Setting Up Website Analytics</b><br>
+                • After deploying the website, it’s important to monitor its performance and traffic.<br>
+                • Google Analytics: Add Google Analytics tracking code to your website to track user
+                behavior, page views, bounce rates, etc.<br>
+                • Google Search Console: Set up Google Search Console to monitor your site’s presence in
+                Google search, fix any crawling issues, and submit sitemaps.</p>
+                <p><b>5. Server Configuration and Maintenance</b><br>
+                Once the website is deployed, you may need to perform server-side configurations and
+                ongoing maintenance.</p>
+                <p><b>1. Web Server Configuration:</b><br>
+                • For Apache or Nginx servers, you may need to set up configuration files (like .htaccess for
+                Apache) to enable features like URL rewrites, redirects, or enabling gzip compression for
+                faster loading.<br>
+                <b>2. Regular Backups:</b><br>
+                Always back up your website regularly. Many hosting providers offer backup solutions, or
+                you can use plugins (for CMS like WordPress) orthird-party services to automate backups.<br>
+                <b>3. Server Monitoring:</b><br>
+                • Use server monitoring tools like UptimeRobot or Pingdom to check your websites uptime
+                and response time.<br>
+                • For cloud and VPS hosting, you can monitor server performance (CPU, memory usage,
+                disk space) via the providers dashboard (AWS CloudWatch, DigitalOcean monitoring tools,
+                etc.).<br>
+                <b>4. Website Security:</b><br>
+                • Keep your websites software (e.g., CMS, plugins) up to date.<br>
+                • Implement security measures like firewalls (e.g., Cloudflare),two-factor authentication,
+                and anti-malware tools.</p>
+                <p><b>6. Final Testing and Going Live</b><br>
+                Once everything is set up:<br>
+                1. Test your website to make sure everything works (links, forms, media, etc.).<br>
+                2. Ensure thatthe website loads correctly on various devices and browsers.<br>
+                3. Perform performance testing using tools like Google PageSpeed Insights, GTMetrix, or
+                Lighthouse.<br>
+                4. Make sure SEO elements (title tags, meta descriptions, alt text) are in place.<br>
+                5. Finally, announce the website launch and share it with yourtarget audience.</p>
+             </section><br><hr>
+            
+        <a href="../Subjects/lesson2.html" id="learn-btn"><h3>Back to Lesson 2</h3></a>
+      </div>
+    </div>
+    <script src="../Subjects/sub.js"></script>
+</body>
+</html>

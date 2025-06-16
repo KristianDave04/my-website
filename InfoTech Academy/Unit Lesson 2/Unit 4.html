@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Lesson 2 - Unit 4</title>
+  <link rel="stylesheet" href="../Subjects/sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="module-container">
+        <br>
+        <hr>
+        <section>
+                <h3>UNIT IV: Document Object Model (DOM)</h3><hr>
+                <p><b>DOM (Document Object Model) Manipulation</b> refers to the process of interacting with and
+                modifying the structure, content, and style of a webpage using JavaScript. The DOM
+                represents the webpage as a tree-like structure where each element, attribute, and piece
+                of text in the HTML document is a node that can be accessed and manipulated.</p>
+                <p><b>1. Understanding the DOM Structure:</b><br>
+                The DOM is a programming interface for web documents. It provides a structured
+                representation ofthe HTML or XML document, allowing programming languages like
+                JavaScript to manipulate the document’s structure, style, and content.<br><br>
+                * Document Node: Represents the entire HTML document.<br>
+                * Element Nodes: Represent HTML tags (e.g., `&lt;div&gt;`, `&lt;p&gt;`, `&lt;a&gt;`).<br>
+                * Text Nodes: Contain the text within an HTML element.<br>
+                * Attribute Nodes: Representthe attributes within an element(e.g., `id`, `class`, `src`).</p>
+                <p><b>2. Accessing Elements in the DOM:</b><br>
+                To manipulate the DOM, you first need to access the elements. There are several ways to
+                access DOM elements:<br>
+                • `getElementById(id)`: Returns the element with the specified `id`.<br>
+                • `getElementsByClassName(className)`: Returns a live HTMLCollection of
+                elements with the specified class name.<br>
+                • `getElementsByTagName(tagName)`: Returns a live HTMLCollection of elements
+                with the specified tag name.<br>
+                • `querySelector(selector)`: Returns the first element that matches a specified CSS selector.</p>
+                <p><b>3. Manipulating Elements:</b><br>
+                Once you’ve accessed an element, you can manipulate it in various ways:<br>
+                Changing Content:<br>
+                • `textContent`: Modifies the text content of an element.<br>
+                • `innerHTML`: Modifies the HTML content inside an element (can also be used to insert HTML).<br><br>
+                Changing Attributes:<br>
+                • `setAttribute(name, value)`: Sets a new value for an attributes<br>
+                • `getAttribute(name)`: Gets the value of an attribute.<br><br>
+                Changing Style:<br>
+                • `style`: Modify inline styles directly.<br><br>
+                Class Manipulation:<br>
+                • `classList.add(className)`: Adds a class to an element.<br>
+                • `classList.toggle(className)`: Toggles a class on or off.</p>
+                <p><b>4. Creating and Inserting New Elements:</b><br>
+                You can create new elements dynamically and insert them into the DOM.<br>
+                • `createElement(tagName)`: Creates a new HTML element.<br>
+                • `appendChild(node)`: Adds a node as the last child of the specified element.<br>
+                • `insertBefore(newNode, referenceNode)`: Inserts a new node before a reference node.<br>
+                • `insertAdjacentHTML(position, text)`: Inserts HTML content at a specified position
+                relative to the element.</p>
+                <p><b>5. Removing Elements:</b><br>
+                You can remove elements from the DOM:<br>
+                • `removeChild(node)`: Removes a child element from its parent.<br>
+                • `remove()`: Removes the element from the DOM entirely.</p>
+                <p><b>6. Event Handling:</b><br>
+                DOM manipulation is often accompanied by event handling. You can add event listeners to
+                elements to trigger actions when a userinteracts with the page.<br>
+                • `addEventListener(event, function)`: Adds an eventlistenerto an element.</p>
+                <p><b>7. Example of DOM Manipulation:</b><br>
+                Here’s a simple example of DOM manipulation where a button click changes the content of
+                a paragraph:</p>
+                <table border="1px">
+                    <tr>
+                        <td>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;title&gt;DOM Manipulation Example&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p id="myParagraph"&gt;This is the original paragraph&lt;./p&gt;<br>
+                            &lt;button onclick="changeContent()"&gt;Click Me!&lt;/button&gt;<br>
+                            &lt;script&gt;<br>
+                            function changeContent() {<br>
+                            document.getElementById("myParagraph").innerHTML = "The content has been changed!";<br>
+                            }<br>
+                            &lt;/script&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </td>
+                    </tr>
+                </table>
+             </section><br><hr>
+            
+        <a href="../Subjects/lesson2.html" id="learn-btn"><h3>Back to Lesson 2</h3></a>
+      </div>
+    </div>
+    <script src="../Subjects/sub.js"></script>
+</body>
+</html>

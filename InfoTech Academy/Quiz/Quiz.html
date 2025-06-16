@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Quiz</title>
+  <link rel="stylesheet" href="Quiz.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+<main class="home-content">
+  <div class="container" role="main" aria-label="Multi subject quiz application">
+    <h2>InfoTech Academy Quiz</h2>
+
+    <select id="subject-select" aria-label="Select Subject">
+      <option value="">-- Select Subject --</option>
+      <option value="networks">Introduction to Computer Networks</option>
+      <option value="webdev">Web Development Fundamentals</option>
+      <option value="python">Python Programming for Beginners</option>
+      <option value="cloud">Cloud Computing Basics</option>
+      <option value="databases">Introduction to Databases</option>
+      <option value="htmlcss">HTML5 and CSS3 Essentials</option>
+    </select>
+
+    <button id="start-quiz-btn" aria-disabled="false">Take Quiz</button>
+    <div class="message" id="subject-message" role="alert" aria-live="assertive"></div>
+
+    <div id="quiz" aria-live="polite">
+        <div id="timer" aria-live="polite" style="text-align:center; font-weight:700; margin-bottom:12px;"></div>
+        <div id="explanation" style="font-size:15px; color:#2c3e50; margin-top:10px; display:none;"></div>
+      <div id="progress" aria-label="Question progress"></div>
+      <div id="progress-bar-container" aria-hidden="true">
+        <div id="progress-bar"></div>
+      </div>
+      <div id="question"></div>
+      <div id="options" role="list"></div>
+      <button id="next-btn" disabled aria-disabled="true" aria-label="Next question">Next</button>
+      <button id="reset-btn" style="display:none;" aria-label="Reset quiz">Reset Quiz</button>
+    </div>
+
+    <div id="score" aria-live="polite"></div>
+    <div id="summary-emoji" aria-hidden="true"></div>
+
+    <div id="history">
+      <h3>Past Attempts</h3>
+      <ul id="history-list"></ul>
+      <button id="clear-history-btn">Clear History</button>
+      <h2>Still want learn more?</h2>
+      <a href="../Course/course.html"><button id="course-btn">Back to Course</button></a>
+    </div>
+  </div>
+</main>
+
+
+
+  <script src="Quiz.js"></script>
+</body>
+</html>

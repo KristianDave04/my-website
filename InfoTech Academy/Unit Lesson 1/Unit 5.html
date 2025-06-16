@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Lesson 1 - Unit 5</title>
+  <link rel="stylesheet" href="../Subjects/sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="module-container">
+        <br>
+        <hr>
+        <section>
+            <h3>UNIT V: Wireless Networking</h3><hr>
+                 <p>1. What is Wireless Networking?<br>
+                • Wireless networking enables devices to connect and communicate without physical<br>
+                cables, using radio frequency (RF) signals or infrared (IR) signals to transmit data.
+                • This module explores how wireless networks function, the standards involved, security
+                concerns, and setup basics.</p>
+                <p>2. Key Components of a Wireless Network</p>
+                <table border="1px">
+                    <tr>
+                        <td>Component</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>Wireless Access Point (WAP)</td>
+                        <td>Connects wireless devices to a wired network</td>
+                    </tr>
+                    <tr>
+                        <td>Wireless Router</td>
+                        <td>Combines a router and WAP; used in most homes</td>
+                    </tr>
+                    <tr>
+                        <td>Wireless Network Interface Card (NIC)</td>
+                        <td>Enables devices to connect wirelessly</td>
+                    </tr>
+                    <tr>
+                        <td>Antenna</td>
+                        <td>Used by access points and NICs to transmit/receive signals</td>
+                    </tr>
+                    <tr>
+                        <td>Signal</td>
+                        <td>Transmitted over 2.4 GHz or 5 GHz bands (or 6 GHz forWi-Fi 6E)</td>
+                    </tr>
+                </table>
+                <p>3. Wireless Standards (IEEE 802.11)</p>
+                <table border="1px">
+                    <tr>
+                        <td>Standard</td>
+                        <td>Frequency</td>
+                        <td>Max Speed</td>
+                        <td>Range</td>
+                        <td>Use Case</td>
+                    </tr>
+                    <tr>
+                        <td>802.11a</td>
+                        <td>5 GHz</td>
+                        <td>54 Mbps</td>
+                        <td>Short</td>
+                        <td>Obsolete</td>
+                    </tr>
+                    <tr>
+                        <td>802.11b</td>
+                        <td>2.4 GHz</td>
+                        <td>11 Mbps</td>
+                        <td>Long</td>
+                        <td>Obsolete</td>
+                    </tr>
+                    <tr>
+                        <td>802.11g</td>
+                        <td>2.4 GHz</td>
+                        <td>54 Mbps</td>
+                        <td>Medium</td>
+                        <td>Legacy</td>
+                    </tr>
+                    <tr>
+                        <td>802.11n</td>
+                        <td>2.4/5 GHz</td>
+                        <td>600 Mbps</td>
+                        <td>Wide</td>
+                        <td>Common</td>
+                    </tr>
+                    <tr>
+                        <td>802.11ac</td>
+                        <td>5 GHz</td>
+                        <td>1.3 Gbps+</td>
+                        <td>Medium</td>
+                        <td>High-speed networks</td>
+                    </tr>
+                    <tr>
+                        <td>802.11ax (Wi-Fi 6)</td>
+                        <td>2.4/5 GHz</td>
+                        <td>10 Gbps</td>
+                        <td>Efficient C Modern</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>802.11be (Wi-Fi 7)</td>
+                        <td>6 GHz</td>
+                        <td>30 Gbps+</td>
+                        <td>Future-ready</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p>4. Wireless Modes</p>
+                <table border="1px">
+                    <tr>
+                        <td>Mode</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>Infrastructure Mode</td>
+                        <td>Devices connect through an access point (standard Wi-Fi setup)</td>
+                    </tr>
+                    <tr>
+                        <td>Ad Hoc Mode</td>
+                        <td>Devices connect directly without access points</td>
+                    </tr>
+                    <tr>
+                        <td>Mesh Networking</td>
+                        <td>Devices relay data to extend coverage (used in large areas)</td>
+                    </tr>
+                </table>
+                <p>5. Wireless Frequency Bands<br>
+                * 2.4 GHz: Longer range, more interference (microwaves, Bluetooth)<br>
+                * 5 GHz: Shorter range, higher speeds, less interference<br>
+                * 6 GHz: Ultra-fast, used in Wi-Fi 6E and Wi-Fi 7 (newest standard)</p>
+                <p>6. Wireless Security Protocols</p>
+                <table border="1px">
+                    <tr>
+                        <td>Protocol</td>
+                        <td>Description</td>
+                        <td>Status</td>
+                    </tr>
+                    <tr>
+                        <td>WEP</td>
+                        <td>Weak encryption</td>
+                        <td>Deprecated</td>
+                    </tr>
+                    <tr>
+                        <td>WPA</td>
+                        <td>Improved over WEP</td>
+                        <td>Legacy</td>
+                    </tr>
+                    <tr>
+                        <td>WPA2</td>
+                        <td>AES-based, strong encryption</td>
+                        <td>Current standard</td>
+                    </tr>
+                    <tr>
+                        <td>WPA3</td>
+                        <td>Enhanced security C forward secrecy</td>
+                        <td>Emerging standard</td>
+                    </tr>
+                </table>
+                <p>7. Common Wireless Networking Terms</p>
+                <table border="1px">
+                    <tr>
+                        <td>Term</td>
+                        <td>Meaning</td>
+                    </tr>
+                    <tr>
+                        <td>SSID</td>
+                        <td>Service Set Identifier – network name</td>
+                    </tr>
+                    <tr>
+                        <td>BSSID</td>
+                        <td>MAC address of the access point</td>
+                    </tr>
+                    <tr>
+                        <td>Roaming</td>
+                        <td>Moving between access points without losing connection</td>
+                    </tr>
+                    <tr>
+                        <td>Channel</td>
+                        <td>Subdivision of frequency band to reduce interference</td>
+                    </tr>
+                    <tr>
+                        <td>Interference</td>
+                        <td>Signal disruption from overlapping Wi-Fi or devices</td>
+                    </tr>
+                </table>
+                <p>8. Wireless Troubleshooting Tips<br>
+                * Weak signal: Move closer to the access point or use repeaters/extenders<br>
+                * Interference: Change channel on the router<br>
+                * Authentication errors: Check WPA settings and credentials<br>
+                * Device not connecting: Restart router, check NIC drivers</p>
+                <p>9. Benefits and Challenges<br><br>
+                Advantages:<br>
+                * Mobility and convenience<br>
+                * Easier installation<br>
+                * Scalability<br><br>
+                Challenges:<br>
+                * Signal interference<br>
+                * Security risks<br>
+                * Limited bandwidth with many users</p>
+                <p>10. Tools for Wireless Analysis<br>
+                * Wireshark: Monitor wireless traffic<br>
+                * NetSpot/ inSSIDer: View signal strength and channel overlap<br>
+                * Aircrack-ng: For ethical hacking and penetration testing.</p>
+        </section><br><hr>
+            
+        <a href="../Subjects/lesson1.html" id="learn-btn"><h3>Back to Lesson 1</h3></a>
+      </div>
+    </div>
+    <script src="../Subjects/sub.js"></script>
+</body>
+</html>

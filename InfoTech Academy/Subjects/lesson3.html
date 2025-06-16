@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Course - Lesson 3</title>
+  <link rel="stylesheet" href="sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <!--MAIN TOPIC-->
+<div class="main-content">
+  <div class="module-container">
+    <h2>IT113 - Python Variables and Data Types</h2>
+    <ul class="rules">
+      <li>Can contain combinations of letters (lower-case & upper-case), digits or numbers, or underscore (_). (Ex. Var_1, my_char1)</li>
+      <li>It can be any length</li>
+      <li>And you can't use symbols (Ex. @, !, %, $,) or keywords as variables.</li>
+    </ul>
+    <hr>
+    <h3>Data Types</h3>
+    <table>
+      <tr><th>Type</th><th>Example</th><th>Description</th></tr>
+      <tr><td>str</td><td>"Hello"</td><td>Text/String</td></tr>
+      <tr><td>int</td><td>2</td><td>Integer/Whole Number</td></tr>
+      <tr><td>float</td><td>3.14</td><td>Decimal Number</td></tr>
+      <tr><td>bool</td><td>True or False</td><td>Boolean</td></tr>
+      <tr><td>list</td><td>[1, 2, 3]</td><td>Ordered, Changeable Collection</td></tr>
+      <tr><td>tuple</td><td>(1, 2, 3)</td><td>Ordered, Unchangeable Collection</td></tr>
+      <tr><td>set</td><td>{1, 2, 3}</td><td>Unordered, Unique Values</td></tr>
+      <tr><td>None Type</td><td>None</td><td>Represent Absence of Value</td></tr>
+    </table>
+    <h3>Operators</h3>
+    <p><b>Arithmetic Operators:</b> used for mathematical operations</p>
+    <table>
+      <tr><th>Operators</th><th>Name</th><th>Example</th></tr>
+      <tr><td>+</td><td>Addition</td><td>x + y</td></tr>
+      <tr><td>-</td><td>Subtraction</td><td>x - y</td></tr>
+      <tr><td>*</td><td>Multiplication</td><td>x * y</td></tr>
+      <tr><td>/</td><td>Division</td><td>x / y</td></tr>
+      <tr><td>%</td><td>Modulus</td><td>x % y</td></tr>
+      <tr><td>**</td><td>Exponentiation</td><td>x ** y</td></tr>
+      <tr><td>//</td><td>Floor Division</td><td>x // y</td></tr>
+    </table>
+    <p><b>Assignment Operators:</b> used to assign values to variables</p>
+    <table>
+      <tr><th>Operators</th><th>Example</th><th>Same as</th></tr>
+      <tr><td>=</td><td>x = 5</td><td>x = 5</td></tr>
+      <tr><td>+=</td><td>x += 5</td><td>x = x + 5</td></tr>
+      <tr><td>-=</td><td>x -= 5</td><td>x = x - 5</td></tr>
+      <tr><td>*=</td><td>x *= 5</td><td>x = x * 5</td></tr>
+      <tr><td>/=</td><td>x /= 5</td><td>x = x / 5</td></tr>
+      <tr><td>%=</td><td>x %= 5</td><td>x = x % 5</td></tr>
+      <tr><td>**=</td><td>x **= 5</td><td>x = x ** 5</td></tr>
+      <tr><td>//=</td><td>x //= 5</td><td>x = x // 5</td></tr>
+    </table>
+    <p><b>Comparison Operators:</b> used for comparing values (used in conditionals)</p>
+    <table>
+      <tr><th>Operators</th><th>Name</th><th>Example</th></tr>
+      <tr><td>==</td><td>Equal</td><td>x == y</td></tr>
+      <tr><td>!=</td><td>Not Equal</td><td>x != y</td></tr>
+      <tr><td>></td><td>Greater than</td><td>x > y</td></tr>
+      <tr><td><</td><td>Less than</td><td>x < y</td></tr>
+      <tr><td>>=</td><td>Greater or Equal</td><td>x >= y</td></tr>
+      <tr><td><=</td><td>Less or Equal</td><td>x <= y</td></tr>
+    </table>
+    <p><b>Logical Operators:</b> used to combine conditional statements</p>
+    <table>
+      <tr><th>Operators</th><th>Description</th><th>Example</th></tr>
+      <tr><td>and</td><td>True if both are true</td><td>x < 4 and x < 8</td></tr>
+      <tr><td>or</td><td>True if one is true</td><td>x < 8 or x < 4</td></tr>
+      <tr><td>not</td><td>Reverse the result</td><td>not (x < 4 and x < 8)</td></tr>
+    </table>
+    <p><b>Bitwise Operators:</b> used for binary operations</p>
+    <table>
+      <tr><th>Operators</th><th>Name</th><th>Description</th><th>Example</th></tr>
+      <tr><td>&</td><td>AND</td><td>Sets bit if both are 1</td><td>x & y</td></tr>
+      <tr><td>|</td><td>OR</td><td>Sets bit if either is 1</td><td>x | y</td></tr>
+      <tr><td>^</td><td>XOR</td><td>Sets bit if only one is 1</td><td>x ^ y</td></tr>
+      <tr><td>~</td><td>NOT</td><td>Inverts bits</td><td>~x</td></tr>
+    </table>
+    <hr>
+
+    <h3>Let's Try This!</h3>
+    <p><b>Activity Title:</b> “Create Your First Python Mini App: A Simple Quiz!”<br><br>
+      <b>Objective:</b> Help beginners understand Python basics by building a small interactive quiz program.
+    </p>
+    <p><b>Instructions:</b><br><b>Scenario:</b> You’re designing a short Python quiz app that asks the user 3 questions. Collect answers, evaluate, and show score.</p>
+    <ol>
+      <li><b>Set Up Your Python Script (5 mins)</b><br>Create a file <code>quiz.py</code> and print a welcome message.</li>
+      <li><b>Ask Questions (10 mins)</b><br>Use <code>input()</code> for 3 questions. Store responses.</li>
+      <li><b>Check Answers (15 mins)</b><br>Use <code>if/else</code> to compare with correct answers. Track score.</li>
+      <li><b>Show Score (5 mins)</b><br>Print total correct answers.</li>
+      <li><b>Bonus (Optional)</b><br>Use <code>.lower()</code>, add more questions or retries.</li>
+    </ol>
+    <p><b>Example Output:</b></p>
+    <pre class="code-example">print("Welcome to the Python Quiz!")
+q1 = input("What is the keyword to define a function in Python? ")
+score = 0
+if q1.lower() == "def":
+    print("Correct!")
+    score += 1
+else:
+    print("Oops! The correct answer is 'def'.")</pre>
+    <p><b>Deliverables:</b></p>
+    <ul>
+      <li>A .py file with quiz code</li>
+      <li>Optional: Screenshot of terminal output</li>
+    </ul>
+    <p><b>Evaluation Criteria:</b></p>
+    <table>
+      <tr><th>Criteria</th><th>Points</th></tr>
+      <tr><td>Code runs without errors</td><td>10</td></tr>
+      <tr><td>Use of variables and input</td><td>10</td></tr>
+      <tr><td>Correct use of if/else</td><td>10</td></tr>
+      <tr><td>Output formatting</td><td>10</td></tr>
+      <tr><td>Bonus features</td><td>10</td></tr>
+      <tr><th>Total</th><th>50</th></tr>
+    </table>
+    <p><b>Extension / Homework (Optional):</b></p>
+    <ul>
+      <li>Ask for user name and personalize greeting</li>
+      <li>Show score percentage or feedback</li>
+      <li>Use a loop to retake the quiz</li>
+    </ul>
+  </div>
+</div>
+
+     <script src="sub.js"></script>
+</body>
+</html>

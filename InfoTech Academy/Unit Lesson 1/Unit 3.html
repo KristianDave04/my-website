@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Lesson 1 - Unit 3</title>
+  <link rel="stylesheet" href="../Subjects/sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="module-container">
+        <br>
+        <hr>
+        <section>
+            <h3>UNIT III: Routing and Switching</h3><hr>
+        <p>
+            1. What is Routing and Switching?<br>
+                * Routing refers to the process of selecting paths in a network along which to send data
+                packets from source to destination.<br>
+                * Switching involves forwarding data within a local network (LAN) using MAC addresses.<br>
+                * Routing operates at Layer 3 (Network Layer) of the OSI model, while switching operates at
+                Layer 2 (Data Link Layer).</p>
+                <p>2. Switching Concepts<br><br>
+                A. What is a Switch?<br>
+                A switch is a Layer 2 device that connects multiple devices within the same network and
+                uses MAC addresses to forward data only to the intended recipient.</p>
+                <p>B. Switch Functions<br>
+                * Learns MAC addresses via the MAC address table.<br>
+                * Forwards frames based on destination MAC.<br>
+                * Reduces unnecessary traffic compared to a hub.<br>
+                * Operates in full-duplex mode.</p>
+                <p>C. Types of Switching<br>
+                * Store-and-Forward: Entire frame is received before forwarding.<br>
+                * Cut-Through: Starts forwarding as soon as destination MAC is read.<br>
+                * Fragment-Free: Checks the first 64 bytes for errors before forwarding.</p>
+                <p>D. VLANs (Virtual LANs)<br>
+                * Used to segment broadcast domains in a switch.<br>
+                * Each VLAN behaves like a separate logical network.<br>
+                * Increases security and reduces broadcast traffic.</p>
+                <p>3. Routing Concepts<br><br>
+                A. What is a Router?<br>
+                A router is a Layer 3 device that connects different networks and determines the best path
+                for data to travel across networks using IP addresses.</p>
+                <p>B. Key Routing Function<br>
+                * Maintains a routing table with paths to various networks.<br>
+                * Forwards packets based on destination IP.<br>
+                * Can perform Network Address Translation (NAT) and firewall filtering.</p>
+                <p>C. Types of Routing</p>
+                <table border="1px">
+                    <tr>
+                        <td>Type</td>
+                        <td>Description</td>
+                        <td>Example</td>
+                    </tr>
+                    <tr>
+                        <td>Static Routing</td>
+                        <td>Manually configured routes</td>
+                        <td>Small networks</td>
+                    </tr>
+                    <tr>
+                        <td>Dynamic Routing</td>
+                        <td>Routes learned from routing protocols</td>
+                        <td>Larger, complex networks</td>
+                    </tr>
+                </table>
+                <p>D. Routing Protocols</p>
+                <table border="1px">
+                    <tr>
+                        <td>Protocol</td>
+                        <td>Description</td>
+                        <td>Metric</td>
+                        <td>Used In</td>
+                    </tr>
+                    <tr>
+                        <td>RIP (Routing Information Protocol)</td>
+                        <td>Uses hop count; older</td>
+                        <td>Hop count</td>
+                        <td>•Small networks</td>
+                    </tr>
+                    <tr>
+                        <td>OSPF (Open Shortest Path First)</td>
+                        <td>Link-state protocol; efficient</td>
+                        <td>Cost</td>
+                        <td>•Enterprise networks</td>
+                    </tr>
+                    <tr>
+                        <td>EIGRP (Cisco proprietary)</td>
+                        <td>Advanced distance-vector </td>
+                        <td>Bandwidth, delay</td>
+                        <td>•Cisco networks</td>
+                    </tr>
+                    <tr>
+                        <td>BGP (Border Gateway Protocol)</td>
+                        <td>Used on the internet</td>
+                        <td>Path attributes</td>
+                        <td>•ISPs, Internet</td>
+                    </tr>
+                </table>
+                <p></p>
+                <table border="1px">
+                    <tr>
+                        <td>Feature</td>
+                        <td>Switch</td>
+                        <td>Router</td>
+                    </tr>
+                    <tr>
+                        <td>OSI Layer</td>
+                        <td>Layer 2</td>
+                        <td>Layer 3</td>
+                    </tr>
+                    <tr>
+                        <td>Uses Address</td>
+                        <td>MAC Address</td>
+                        <td>IP Address</td>
+                    </tr>
+                    <tr>
+                        <td>Role</td>
+                        <td>Connects devices in LAN</td>
+                        <td>Connects different networks</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>Faster (no complex decisions)</td>
+                        <td>Slower (routing logic involved)</td>
+                    </tr>
+                    <tr>
+                        <td>Broadcast Domain</td>
+                        <td>Divides using VLANs </td>
+                        <td>Each port is a separate domain</td>
+                    </tr>
+                </table>
+                <p>5. Packet Forwarding Flow<br>
+                Example: Data from PC A to PC B in another network<br>
+                1. Switch sends data to router via MAC address.<br>
+                2. Router checks IP and routing table.<br>
+                3. Router forwards packet to destination router.<br>
+                4. Final switch sends data to PC B.</p>
+                <p>6. Routing and Switching Tools<br>
+                * Cisco Packet Tracer: Simulate switching and routing environments.<br>
+                * Wireshark: Monitor packet forwarding and routing paths.<br>
+                * Traceroute: Command-line tool to track the path of packets.</p>
+                <p>7. Challenges in Real Networks<br>
+                * Loops (solved by Spanning Tree Protocol)<br>
+                * Congestion (solved by QoS and load balancing)<br>
+                * Security (handled via ACLs and VLAN segmentation)
+        </p>
+        </section><br><hr>
+            
+        <a href="../Subjects/lesson1.html" id="learn-btn"><h3>Back to Lesson 1</h3></a>
+      </div>
+    </div>
+    <script src="../Subjects/sub.js"></script>
+</body>
+</html>

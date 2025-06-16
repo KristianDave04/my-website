@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Lesson 1 - Unit 6</title>
+  <link rel="stylesheet" href="../Subjects/sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="module-container">
+        <br>
+        <hr>
+        <section>
+            <h3>UNIT VI: Network Security Basics</h3><hr>
+                <p>1. What is Network Security?<br>
+                • Network security refers to the policies, practices, and technologies used to protect
+                network infrastructure, data, and devices from unauthorized access, misuse, malfunction,
+                or destruction.<br>
+                • It aims to ensure the **confidentiality, integrity, and availability (CIA)** of data
+                transmitted across or stored within networks.</p>
+                <p>2. Goals of Network Security</p>
+                <table border="1px">
+                    <tr>
+                        <td>Security Goal</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>Confidentiality</td>
+                        <td>Prevent unauthorized access to data (e.g., encryption)</td>
+                    </tr>
+                    <tr>
+                        <td>Integrity</td>
+                        <td>Ensure data is not tampered with (e.g., hashing)</td>
+                    </tr>
+                    <tr>
+                        <td>Availability</td>
+                        <td>Keep services and data accessible when needed (e.g., DDoS protection)</td>
+                    </tr>
+                    <tr>
+                        <td>Authentication</td>
+                        <td>Verify identity of users and systems</td>
+                    </tr>
+                    <tr>
+                        <td>Non-repudiation</td>
+                        <td>Ensure actions can’t be denied later (e.g., digital signatures)</td>
+                    </tr>
+                </table>
+                <p>3.Common Threats to Networks</p>
+                <table border="1px">
+                    <tr>
+                        <td>Threat Type</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>Malware</td>
+                        <td>Viruses, worms, ransomware, trojans</td>
+                    </tr>
+                    <tr>
+                        <td>Phishing</td>
+                        <td>Deceptive emails or websites to steal information</td>
+                    </tr>
+                    <tr>
+                        <td>Denial of Service (DoS/DDoS)</td>
+                        <td>Overloads the network to make it unavailable</td>
+                    </tr>
+                    <tr>
+                        <td>Man-in-the-Middle (MitM)</td>
+                        <td>Intercepts communication between two parties</td>
+                    </tr>
+                    <tr>
+                        <td>IP Spoofing</td>
+                        <td>Faking an IP address to gain access</td>
+                    </tr>
+                    <tr>
+                        <td>Eavesdropping</td>
+                        <td>Monitoring network traffic to steal data</td>
+                    </tr>
+                    <tr>
+                        <td>Brute-force attacks</td>
+                        <td>Repeated login attempts to guess passwords</td>
+                    </tr>
+                </table>
+                <p>4. Network Security Tools and Devices</p>
+                <table border="1px">
+                    <tr>
+                        <td>Tool/Device</td>
+                        <td>Function</td>
+                    </tr>
+                    <tr>
+                        <td>Firewall</td>
+                        <td>Blocks or permits traffic based on rules</td>
+                    </tr>
+                    <tr>
+                        <td>Antivirus/Antimalware</td>
+                        <td>Detects and removes malicious software</td>
+                    </tr>
+                    <tr>
+                        <td>Intrusion Detection System (IDS)</td>
+                        <td>Monitors traffic for suspicious activity</td>
+                    </tr>
+                    <tr>
+                        <td>Intrusion Prevention System (IPS)</td>
+                        <td>Blocks detected malicious activity</td>
+                    </tr>
+                    <tr>
+                        <td>VPN (Virtual Private Network)</td>
+                        <td>Encrypts data across public networks</td>
+                    </tr>
+                    <tr>
+                        <td>Proxy Server</td>
+                        <td>Acts as an intermediary for requests</td>
+                    </tr>
+                    <tr>
+                        <td>Access Control Lists (ACLs)</td>
+                        <td>Filter traffic on routers/switches</td>
+                    </tr>
+                </table>
+                <p>5. Security Protocols</p>
+                  <table border="1px">
+                    <tr>
+                        <td>Protocol</td>
+                        <td>Purpose</td>
+                    </tr>
+                    <tr>
+                        <td>SSL/TLS</td>
+                        <td>Encrypts data on websites (HTTPS)</td>
+                    </tr>
+                    <tr>
+                        <td>IPSec</td>
+                        <td>Secures IP communications (VPNs)</td>
+                    </tr>
+                    <tr>
+                        <td>WPA2/WPA3</td>
+                        <td>Wireless network encryption</td>
+                    </tr>
+                    <tr>
+                        <td>SSH</td>
+                        <td>Secure remote access to devices</td>
+                    </tr>
+                    <tr>
+                        <td>HTTPS</td>
+                        <td>Secure web browsing</td>
+                    </tr>
+                </table>
+                <p>6. User Authentication Methods</p>
+                <table border="1px">
+                    <tr>
+                        <td>Method</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>Password-based</td>
+                        <td>Simple but vulnerable if weak</td>
+                    </tr>
+                    <tr>
+                        <td>Two-Factor Authentication (2FA)</td>
+                        <td>Combines password with code/token</td>
+                    </tr>
+                    <tr>
+                        <td>Biometric</td>
+                        <td>Uses fingerprint, face, iris, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Certificates</td>
+                        <td>Used for encrypted communication and verification</td>
+                    </tr>
+                    <tr>
+                        <td>Tokens or Smart Cards</td>
+                        <td>Physical devices used for authentication</td>
+                    </tr>
+                </table>
+                <p>7. Best Practices for Network Security<br>
+                * Use strong passwords and change them regularly.<br>
+                * Update software and firmware to patch vulnerabilities.<br>
+                * Segment the network using VLANs to contain breaches.<br>
+                * Limit user privileges using the principle of least privilege.<br>
+                * Use multi-factor authentication wherever possible.<br>
+                * Monitor logs and set up alerts for anomalies.<br>
+                * Encrypt sensitive data in transit and at rest.<br>
+                * Disable unused ports and services.<br>
+                * Educate users about social engineering attacks.</p><br>
+        </section><br><hr>
+            
+        <a href="../Subjects/lesson1.html" id="learn-btn"><h3>Back to Lesson 1</h3></a>
+      </div>
+    </div>
+    <script src="../Subjects/sub.js"></script>
+</body>
+</html>

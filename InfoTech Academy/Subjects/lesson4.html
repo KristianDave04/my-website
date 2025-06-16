@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Course - Lesson 4</title>
+  <link rel="stylesheet" href="sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <!--MAIN TOPIC-->
+<div class="main-content">
+  <div class="module-container">
+    <h2>IT214 - Cloud Computing Basics</h2>
+<section>
+        <h3> The Basics of Cloud Computing </h3>
+        <br><p><b>What is Cloud Computing?</b><br>Cloud computing is a widely used, yet often misunderstood concept. At its core, it’s a subscription-based service that provides access to shared computing resources—such as storage and applications over the internet.<br><br>To understand it, consider your web-based email. Services like Gmail or Yahoo! Mail host the necessary infrastructure, letting you access your emails from any device with an internet connection. Unlike software installed directly on your device, your email is stored remotely, offering flexibility and convenience. Cloud computing applies this model to a wide range of data and applications, not just email.</p>
+        <br><p><b>How do you use Cloud?</b><br>The cloud allows you to access your data and applications from anywhere with an internet
+connection. It eliminates the need to be physically near your storage devices or computing
+infrastructure.<br><br> This flexibility is especially beneficial for small businesses, which can avoid the cost of purchasing and maintaining hardware. Instead, they can rent the exact amount of storage and computing power they need and scale up or down as necessary.<br><br>All that’s required is an internet connection—wired, wireless, or mobile. Whether you're using a phone, tablet, or computer, the cloud makes it easier to collaborate, access documents, or run applications remotely.</p><br>
+        <hr>
+        <h3>Types of Cloud Deployment</h3>
+        <p>Depending on your needs, there are four main types of cloud environment.</p>
+        <ol type = "1">
+          <li> Public Cloud – Open to any subscriber with internet access </li>
+          <li>  Private Cloud – Restricted to a specific organization or group </li>
+          <li>Community Cloud – Shared by organizations with similar needs </li>
+          <li>Hybrid Cloud – Combines two or more cloud types (e.g., public and private).</li>
+        </ol><br>
+        <h3> Choosing a Cloud Provider </h3>
+        <p> Selecting a provider depends on your specific requirements. Cloud services fall into three main categories, each offering different levels of control. </p>
+        <ol type = "1">
+          <li>Software as a Service (SaaS): Provides access to applications over the internet without installing them on local devices. You have the least control but benefit from ease of use.</li>
+          <li>Platform as a Service (PaaS): Offers tools for developing and deploying applications online, Suitable for developers who want more control than SaaS offers. </li>
+          <li>*Infrastructure as a Service (IaaS): Delivers virtualized hardware resources. This offersthe most control, ideal for businesses  needing to manage their computing environment
+            directly.</li>
+        </ol>
+        <p>As you move from SaaS to IaaS, user control increases while the provider’s role decreases.</p><br>
+        <h3> Security Considerations</h3>
+        <p>Security is one of the most critical concerns in cloud computing. Your data, now hosted
+offsite, becomes a potential target for cyber threats. You must evaluate your provider's
+          security policies, including:</p>
+        <ul>
+          <li>Data encryption methods</li>
+          <li>Physical security of servers</li>
+          <li>Backup procedures</li>
+          <li>Firewall protections</li>
+          <li>Isolation safeguards in shared environments (e.g., community clouds)</li>
+        </ul>
+        <p>Home users typically accept default provider settings, while businesses may negotiate
+security terms. Regardless of your role, selecting a provider that prioritizes data protection
+is essential.<br><br>Remember: using the cloud means relinquishing some control over your data's physical location and security, but most providers are better equipped to safeguard data than
+individual users.<br><br>Cloud computing opens new possibilities for individuals and businesses alike. It provides
+scalable, flexible, and cost-effective access to computing resources. However, it also
+requires careful consideration of data control, access, and security risks. <br><br>Before moving to the cloud, assess:</p>
+        <ul>
+          <li>What data you'll store</li>
+          <li>Who will have access</li>
+          <li>The level of control and services you need</li>
+          <li>The reputation and policies of your cloud provider</li>
+        </ul>
+        <p>With thoughtful planning, the cloud can be a powerful tool to enhance productivity and efficiency.</p><br>
+        <hr>
+        <h3>IaaS, PaaS, SaaS Models</h3>
+        <br><p><b>Introduction to Cloud Models </b><br>Cloud computing enables developers and IT teams to focus on core business goals by outsourcing infrastructure responsibilities such as procurement, maintenance, and scaling. The three primary cloud service models—Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS)—offer varying levels of control and management.<br><br>Understanding these models and how AWS delivers each helps businesses select the most suitable services to meet their needs.<br><br><b>Introduction to AWS Cloud</b><br><br>Amazon Web Services (AWS) provides a comprehensive suite of cloud solutions aligned
+with business goals. AWS simplifies global collaboration, operations, and infrastructure
+management using frameworks like the AWS Cloud Adoption Framework and the AWS
+Hybrid Cloud Framework.<br><br>AWS helps businesses streamline development, reduce infrastructure investment, and scale efficiently—serving customers across over 190 countries.<br><br><b>Cloud Model Overview: SaaS, PaaS, IaaS</b></p>
+        <table border = "1px">
+          <tr>
+            <td>Service Model</td>
+            <td>Managed by You </td>
+            <td>Managed by Provider </td>
+          </tr>
+          <tr>
+            <td>IaaS</td>
+            <td>Applications, Data, Runtime, Middleware, OS </td>
+            <td>Virtualization, Servers, Storage, Networking </td>
+          </tr>
+          <tr>
+            <td>PaaS</td>
+            <td>Applications, Data </td>
+            <td> Runtime, Middleware, OS, Infrastructure</td>
+          </tr>
+          <tr>
+            <td>SaaS</td>
+            <td>Just use the app</td>
+            <td>Everything managed by provider</td>
+          </tr>
+        </table>
+        <p><b>AWS as an IaaS Provider</b><br><br>
+AWS leads the IaaS market with services like Amazon EC2, which provides secure, scalable, and cost-effective compute capacity. Benefits include:</p>
+        <ul>
+          <li>Full control of virtual machines</li>
+          <li>Scalability with auto-scaling and load balancing</li>
+          <li>High availability with 66+ Availability Zones across 21+ regions</li>
+          <li>Advanced security via AWS Identity and Access Management (IAM), Multi-Factor
+            Authentication (MFA), and AWS Key Management Service (KMS)</li>
+        </ul>
+        <br><p><b>Key IaaS services:</b></p>
+        <ul>
+          <li>Amazon VPC for private networking</li>
+          <li>AWS Elasticsearch for load balancing and operational efficiency</li>
+          <li>Amazon RDS for high-availability data replication</li>
+          <li>Amazon Cognito for secure authentication</li>
+        </ul>
+        <p>IaaS suits businesses needing full control over applications and infrastructure without managing physical hardware.<br><br><b>AWS as a SaaS Provider</b><br><br> SaaS allows organizations to use software hosted and maintained by a provider, with no infrastructure or platform concerns.</p>
+        <br><p><b>Why businesses adopt SaaS via AWS:</b></p>
+        <ul>
+          <li>No need for hardware or installations</li>
+          <li>Immediate scalability and flexibility</li>
+          <li>Secure access from anywhere</li>
+          <li>Pay-as-you-use pricing</li>
+          <li>Integrated backup, monitoring and analytics tools</li>
+        </ul>
+        <br><p><b>Challenges of SaaS adoption:</b></p>
+        <ul>
+          <li>Limited customization</li>
+          <li>Integration complexity with existing on-premise systems.</li>
+          <li>Dependence on provider for performance and uptime</li>
+          <li>Data Security and compliance concerns </li>
+        </ul>
+        <br><p><b> AWS SaaS capabilities: </b> </p>
+        <ul>
+          <li>Secure, multi-tenant architecture</li>
+          <li>Identity Management with IAM</li>
+          <li>Real-time monitoring with Amazon CloudWatch</li>
+          <li>Backup management with AWS Backup</li>
+          <li>Analytics with Amazon Kinesis</li>
+        </ul>
+        <p>SaaS on AWS is ideal for businesses seeking fast, low-maintenance software deployment.</p>
+        <br><p><b>AWS as a PaaS Provider</b><br>AWS PaaS solutions such as AWS Lambda abstract infrastructure management, letting developers focus solely on code.<br><br><b>What AWS Lambda offers:</b></p>
+        <ul>
+          <li>Event-driven, serverless architecture</li>
+          <li>Pay only for compute time used</li>
+          <li>Scales automatically with demand</li>
+          <li>Supports integration with other AWS services like AI/ML</li>
+        </ul>
+        <br><p><b>Benefits of AWS PaaS:</b></p>
+        <ul>
+          <li>Eliminates infrastructure overhead</li>
+          <li>Speeds up development cycles</li>
+          <li>Ensures secure, isolated execution environments</li>
+          <li>Facilitates real-time event handling and automation </li>
+        </ul>
+        <p>AWS PaaS is ideal for agile teams needing scalable environments for application
+          development without hardware management.</p><br>
+        <h3>Virtual MAchines(VMs) & Containers</h3>
+        <br><p><b>Learning Objectives<br><br>By the end of this lecture, you should be able to:</b></p>
+        <ul>
+          <li>Understand the concepts and use cases of Virtual Machines (VMs)</li>
+          <li>Understand containerized applications and their use cases</li>
+          <li>Differentiate between VMs and containers</li>
+          <li>Gain hands on experience running:</li>
+        </ul>
+        <p>o A VM (e.g., via UTM or VirtualBox)<br>
+        o A Docker container with exposed ports</p><br>
+        <hr>
+        <h3>Virtual Machines: Computers Within Computers</h3>
+        <br><p><b>What is a Virtual MAchine?</b></p>
+        <p>A Virtual Machine allows you to emulate an entire computer system within another. This
+setup enables software to run as if it were on its own dedicated hardware.<br><br><b>Key Components:</b></p>
+        <ul>
+          <li> Hypervisor: Manages the VMs</li>
+          <li>Host: The real physical computer running the hypervisor</li>
+          <li> GuestL The virtualized system running with in the host</li>
+        </ul>
+        <p><b>Why Use Virtual Machines?<br><br>Primary Use Cases:</b></p>
+        <ul>
+          <li>Isolation & Sandboxing: Run untrusted code safely</li>
+          <li>Resource Allocation: Control CPU, memory, and storage usage</li>
+          <li>System Management: Easy to backup, restore, or restart environments.</li>
+          <li>Cross-Platform Testing: Test software across OSes</li>
+          <li>Prototyping NetworkdsL Simulate full networks (e.g., with GNS3)</li>
+          <li>Emulation: Run legacy software for different CPU architectures </li>
+          <li> Experimentation: Try Linux or other OSes without altering your main system</li>
+        </ul>
+        <br><p><b>Emulation vs Virtualization</b></p>
+        <ul>
+          <li> Emulation: Simulates a completely different hardware platform</li>
+          <li>Virtualization: Shares the same architecture as the host and is more efficient</li>
+        </ul>
+        <p>Virtualization is faster because it uses the host’s hardware directly, whereas emulation
+          recreates hardware in software.</p>
+        <br><p><b>Virtualization & Security</b></p>
+        <ul>
+          <li> VMs are designed to isolate the guest from the host</li>
+          <li>Ideal for testing destructive commands(e.g., rm -rf/) safely</li>
+          <li>CPUs include features like intel VT-x and AMD-V to optimize virtualization.</li>
+        </ul>
+        <br><p><b>Hypervisors: The Backbone of VMs</b>Two Types:</p>
+        <ol type = "1">
+          <li>Type 1 (Bare MEtal)-Hypervisor is the OS
+            <ul>
+              <li>Examples:VMWare ESXi, Hyper-V, Promox, Xen</li>
+            </ul>
+          <li>Type 2 (Hosted)-Hypervisor runs inside another OS</li>
+        <ul>
+          <li>Examples: VirtualBox, UTM, VMWare Workstation, Parallels</li><br>
+        </ul>
+        </ol>
+        <hr>
+        <p><b>Container:Lightweight Virtualization<br><br>What are Containers?</b><br><br>Containers package applications with their dependencies but share the host OS kernel. They are more lightweight than VMs and are designed for:</p>
+        <ul>
+          <li>Speed</li>
+          <li>Efficiency</li>
+          <li>Ephemerality(temporary by default; persistent data is stored in volumes)</li>
+        </ul>
+        <p><b>Containerization: Consistent Environments<br><br>Containers define:</b></p>
+        <ul>
+          <li>Expected OS environment (not the kernel)</li>
+          <li>CPU architecture</li>
+          <li>Application dependencies</li>
+          <li>Filesystem layout</li>
+        </ul>
+        <p><b>They offer isolated execution environments for consistency across systems.</b><br><br>Docker: Containerization in Action</p>
+        <p><b> Key Docker Concepts:</b></p>
+        <ul>
+          <li>Image: A snapshot of an app with its dependencies</li>
+          <li>Container: A running instance of an image</li>
+          <li>Dockerfile: Script to build an image</li>
+          <li>Volume: Stores persistent data outside the container lifecycle</li>
+        </ul>
+        <br><p><b>Docker Analogy:</b></p>
+        <ul>
+          <li>Image: Like a .zip or .dmg file</li>
+          <li>Container: The extracted app</li>
+          <li>Dockerfile: The recipe for building the image</li>
+          <li>Volume: Where the app stores user data</li>
+        </ul>
+        <br><p><b> Docker Example:</b><br><br>Bash.<br><br>docker run -it ubuntu:latest bash</p>
+        <ul>
+          <li>i keep STDIN open</li>
+          <li>t allocates a pseudo-TTY</li>
+          <li>ubuntu:latest is the image name</li>
+          <li>bash is the command to run </li>
+        </ul>
+        <p><b>Building with Dockerfiles</b><br><br>Example Dockerfile:<br><br>FROM ubuntu:latest<br>
+RUN apt-get -y update && apt-get -y upgrade<br>
+RUN apt-get install -y build-essential<br>
+WORKDIR /calculator_app<br>ADD ./calculator/ ./<br> RUN make clean && make<br>ENTRYPOINT ["./calculator"]</p>
+        <br><p><b>Key Elements:</b></p>
+        <ul>
+          <li> FROM: Base image </li>
+          <li> RUN: Executes commands to prepare the image</li>
+          <li> WORKDIR: Sets the working directory</li>
+          <li> ADD: Copies files into the image</li>
+          <li> ENTRYPOINT: Defines the startup command</li>
+        </ul>
+        <p>Scaling with Orchestration<br><br>When managin many containers, orchestration tools are used to automate deployment, scaling, and networking.<br><br><b>Kubernetes(KBs):</b></p>
+        <ul>
+          <li> High-level management for containers</li>
+          <li> Handles load balancing, resource allocation, and autoscaling</li>
+          <li> Best for large-scale deployments across multiple servers</li>
+          <li> Commonly used in cloud environments (e.g., AWS, GCP, Azure)</li>
+        </ul>
+        <p>Deploying Applications in the Cloud<br><br><b>Cloud providers offer multiple options:</b></p>
+        <ul>
+          <li> VPS (Virtual Private Server): A VM you control</li>
+          <li> App Services: Provider runs your containerized apps</li>
+          <li> Kubernetes Services: Cloud-integrated K8s deployments</li>
+        </ul>
+        
+        <br><p><b>Conclusion:</b></p>
+        <ul>
+          <li> VMs: Full system emulation, ideal for isolation and testing</li>
+          <li> Containers: Lightweight, efficient, ideal for consistent environments</li>
+          <li> Docker: The de facto standard for managing containers</li>
+          <li> Kubernetes: Powerful orchestration for scaling containerized apps</li><br>
+        </ul>
+        <hr>
+        <h3>AWS/Azure Hands-on Labs</h3>
+        <br><p>AWS/Azure Hands-on Labs are interactive, scenario-based training environments that
+allow users to gain practical experience working with Amazon Web Services (AWS) and
+Microsoft Azure cloud platforms. These labs are designed to simulate real-world tasks in a
+safe, sandboxed environment, where learners can experiment, make mistakes, and build solutions without the risk of affecting production systems</p>
+        <br><p><b>These labs are especially useful for:</b></p>
+        <ul>
+          <li> Beginners who are new to cloud computing.</li>
+          <li> IT professionals looking to upskill</li>
+          <li> Students preparing for certifications like AWS Certified Solutions Architect, Azure Fundamentals (AZ-900), or Azure Administrator (AZ-104).</li>
+          <li> Developers and DevOps engineers working in cloud-native environments.</li>
+        </ul>
+        <br><p><b>Key Features:</b></p>
+        <ul>
+          <li> Guided instructions with step-by-step tasks.</li>
+          <li> Pre-configured environments, so learners don’t need a personal AWS or Azure account.</li>
+          <li> Real-time access to the cloud consoles and command-line interfaces.</li>
+          <li> Assessment and feedback to track progress and identify areas for improvement.</li>
+        </ul>
+        <br><p><b>Example AWS Hands-on Labs:</b></p>
+        <ol type = "1">
+          <li>Launch a Virtual Machine using EC2</li>
+          <p>Users learn how to configure and launch an Amazon EC2 (Elastic Compute Cloud)
+            instance, set up a security group, and connect to the instance via SSH.</p>
+          <li>Create a Static Website using Amazon S3</li>
+          <p>This lab guides users through uploading HTML files to an S3 bucket, enabling static website hosting, and configuring permissions.</p>
+          
+          <li>Build a Serverless Application with AWS Lambda and API Gateway</li>
+          <p>Learners create a Lambda function and expose it via an API Gateway endpoint. This lab
+teaches basic serverless architecture principles.</p>
+        </ol>
+        <br><p><b>Example Azure HAnds-on Labs:</b></p>
+        <ol type = "1">
+          <li> Deploy a Web App using Azure App Service</li>
+          <p>Users deploy a sample application to Azure, configure scaling options, and monitor
+            performance using Azure Monitor.</p>
+          <li>Create and Manage Azure Virtual Machines</li>
+          <p>This lab walks users through creating a VM, connecting to it via Remote Desktop or SSH and configuring it with Azure Resource Manager.</p>
+          <li> Set Up Azure Active Directory and Role-Based Access Control (RBAC)</li>
+          <p>Learners create users and groups, assign roles, and manage access to Azure resources
+            using RBAC policie</p>
+        </ol>
+        <br><p><b>Where to Access These Labs: </b></p>
+        <ul>
+          <li> AWS Skill Builder (https://skillbuilder.aws)</li>
+          <li> Microsoft Learn (https://learn.microsoft.com/en-us/training/)</li>
+          <li> A Cloud Guru (https://acloudguru.com)</li>
+          <li> Pluralsight, Coursera, Udemy, and other online learning platforms.</li>
+        </ul>
+        <br><p><b>Benefits of Hands-on Labs:</b></p>
+        <ul>
+          <li>• Skill development through real-time experimentation.</li>
+          <li>• Certification preparation with realistic practice environments.</li>
+          <li>• Confidence building for applying cloud technologies in professional settings.</li>
+          <li>• Error tolerance, allowing safe trial-and-error learning.</li>
+        </ul>
+        <p>In short, AWS/Azure Hands-on Labs are indispensable tools for building practical cloud
+computing skills. Whether you're new to the cloud or looking to deepen your expertise,
+          these labs offer a structured, effective, and engaging way to learn.</p><br>
+        <hr>
+        <h3> Security in the Cloud </h3>
+        <br><p>Cloud computing has revolutionized the way businesses and individuals manage data and
+deploy applications, but as more sensitive information is stored and processed remotely,
+the security of these cloud environments has become a critical concern. Security in the
+cloud involves protecting data, applications, and systems from threats while maintaining
+availability, confidentiality, and integrity in a shared infrastructure.<br><br>In this detailed overview, we will examine cloud security principles, threats, and best practices for securing cloud environments.</p><br>
+        <ol type = "1">
+          <li> <b>Key Principles of Cloud Security</b></li>
+          <p><b>Confidentiality</b><br><br>Confidentiality ensures that data stored in the cloud is only accessible to authorized users.
+            This is crucial for organizations that manage sensitive customer or proprietary information.</p>
+          <ul>
+            <li><b>Data Encryption:</b> Encrypting data at rest (when stored on the cloud) and in transit (when transmitted over networks) is a fundamental aspect of ensuring
+              confidentiality.</li>
+              <li><b>Access Control:</b> Using strong identity and access management (IAM) protocols ensures that only authorized users can access cloud resources. Techniques such as
+                multi-factor authentication (MFA) add an additional layer of security.</li>
+          </ul>
+          <br><p><b>Integrity</b><br><br>Integrity ensures that data is not tampered with and that it remains accurate and trustworthy. Cloud providers must ensure that their systems are free from unauthorized changes.</p>
+          <ul>
+            <br><li><b>Checksums and Hashing:</b> Data integrity is verified using checksums or hash
+algorithms, which generate a unique value for the data that can be checked to detect alterations.</li>
+            <li><b>Version Control and Audit Trails:</b> Maintaining a clear version history and audit logs for cloud resources can help track changes and identify any potential unauthorized
+modifications.</li>
+          </ul>
+          <br><p><b>Availability</b><br><br>Availability refers to ensuring that cloud resources are accessible and operational when
+needed. This is especially important for businesses relying on cloud applications to operate continuously.</p>
+          <ul>
+            <br><li><b>Redundancy and Failover Systems:</b> To ensure availability, cloud providers use
+redundant systems and data replication across different geographic regions. This ensures that in case of hardware failure, services remain available.</li>
+            <li><b> Service Level Agreements (SLAs):</b> SLAs outline the expected uptime and
+availability guarantees. These agreements help organizations understand the levels of service they can expect from the cloud provider.</li>
+          </ul><br>
+          <li><b>Common Cloud Security Risks</b></li>
+          <p><b>Data Breaches</b><br><br>A data breach occurs when unauthorized individuals gain access to sensitive data. With the growing amount of personal and financial data stored in the cloud, breaches have become one of the biggest risks.</p>
+          <ul>
+            <br><li><b>Insider Threats:</b> Employees or contractors with malicious intent or those who
+accidentally mishandle data can pose a significant risk to cloud security.</li>
+            <li><b>Hacking and Phishing Attacks:</b> Hackers use advanced techniques like spearphishing, malware, and ransomware to breach cloud services.</li>
+          </ul>
+          <br><p><b>Loss of Control Over Data</b><br><br>In the cloud, data is stored and managed by third-party providers. This can lead to
+concerns about data ownership and control, especially if data is stored across borders with varying laws and regulations.</p>
+          <ul>
+            <br><li><b>Jurisdictional Concerns:</b> Data may be subject to different privacy laws depending on where it is stored, complicating compliance with regulations like the GDPR or CCPA.</li>
+            <li><b>Vendor Lock-In:</b> Organizations may become overly dependent on a particular cloud service, making it difficult to migrate to other platforms or to regain control of their data.</li>
+          </ul>
+          <br><p><b>Misconfiguration of cloud Resources</b><br><br>Many cloud security incidents stem from improper configuration of cloud resources, often due to lack of experience or misunderstanding of security tools available in the cloud.</p>
+          <ul>
+            <br><li><b>Open Storage Buckets:</b> Public cloud storage buckets (e.g., Amazon S3) are sometimes left open, exposing sensitive data to anyone on the internet.</li>
+            <li> <b>Improper Network Security Settings:</b> Misconfigured firewalls, security groups, or access control lists (ACLs) can create vulnerabilities in cloud infrastructure.</li>
+          </ul>
+          <br><p><b>Denial of service (DoS) Attacks</b><br><br>DoS attacks target the availability of cloud services by overwhelming them with traffic,
+making them inaccessible to legitimate users.</p>
+          <ul>
+            <br><li> <b>Distributed Denial of Service (DDoS):</b> A DDoS attack amplifies the effect by using multiple systems to flood the target, often making it difficult to mitigate.</li>
+          </ul><br>
+          <li><b> Cloud Security Frameworks and Standards</b></li>
+          <p>Several frameworks and industry standards exist to guide organizations in securing their cloud environments and ensuring compliance with relevant regulations.<br><br><b>ISO/IEC 27001</b><br><br> This international standard provides a systematic approach to managing sensitive company information, including risk management, and sets the foundation for cloud
+security practices.<br><br><b>NIST Cybersecurity Framework</b><br><br>The National Institute of Standards and Technology (NIST) has developed a comprehensive cybersecurity framework, which includes cloud-specific controls for securing cloud
+computing environments.</p>
+          <ul>
+            <li><b>NIST 800-53:</b> A publication offering a catalog of security and privacy controls for federal information systems and organizations.</li>
+          </ul>
+          <br><p><b>CSA Cloud Controls Matrix (CCM)</b>
+The Cloud Security Alliance (CSA) provides a set of security controls specifically designed
+for cloud environments. The CCM addresses key security concerns like data security,
+            identity and access management, and infrastructure security</p>
+          <br><li> Best Practices for Cloud Security</li>
+          <p><b>Data Encryption</b><br><br>Encrypt sensitive data both at rest and in transit. Cloud service providers often offer tools
+to manage encryption, but it’s essential that organizations implement their encryption
+strategies, ensuring only authorized users can access data.<br><br><b>Identity and Access Management (IAM)</b><br><br>
+IAM is critical to ensuring that only authorized users have access to cloud resources.
+            <ul>
+              <li><b> Least Privilege Principle:</b> Users and services should only have the minimum level of access necessary to perform their tasks.</li>
+              <li><b> Multi-Factor Authentication (MFA):</b> MFA reduces the risk of unauthorized access by requiring more than just a password to authenticate users.</li>
+          </ul>
+          <br><p><b>Regular Audits and Monitoring</b><br><br>Implement continuous monitoring of cloud resources, focusing on unusual activity,
+            changes in configurations, or access patterns.</p>
+          <ul>
+            <li><b>Log Management:</b> Cloud providers may offer logging solutions, but integrating those with your own security information and event management (SIEM) system ensures a comprehensive view of potential threats.</li>
+          </ul>
+          <br><p><b>Compliance and Regulatory Adherence</b><br><br>Ensure that your cloud provider and services comply with relevant regulatory frameworks such as GDPR, HIPAA, PCI-DSS, or SOX.</p>
+          <ul>
+            <li><b>Data Sovereignty:</b> Understand where data is stored geographically, and ensure that the location meets legal and regulatory requirements.</li>
+          </ul>
+          <br><p><b>Backup and Disaster Recovery Plans</b>
+Maintaining regular backups of critical data is important to ensure continuity in case of a
+security incident. Implement disaster recovery (DR) plans to minimize downtime in the
+            event of an attack or system failure.<br><br><b>Network Security and Firewalls</b><br><br>Use virtual private networks (VPNs) and firewalls to secure cloud-based systems from
+external threats. Configure security groups and network ACLs carefully to control the flow of traffic to and from cloud resources.<br><br><b>Employee Education and Training</b>
+Cloud security often begins with the users. Regular training helps employees recognize
+phishing attacks, use strong passwords, and follow best practices when interacting with
+cloud systems.</p><br>
+            <li><b>Emerging Technologies and Cloud Security trends</b></li>
+          <p><b>Zero Trust Architecture</b>
+Zero Trust assumes that no user or device, whether inside or outside the network, is trustworthy by default. Every request to access cloud resources must be authenticated and authorized.</p>
+          <ul>
+            <li><b>Micro-Segmentation:</b> Zero Trust often involves segmenting cloud resources into smaller, isolated zones to reduce the potential impact of security breaches.</li>
+            <br><p><b>AI and Machine Learning for Threat Detection</b><br><br>Artificial Intelligence (AI) and machine learning (ML) are increasingly being used to detect unusual patterns of behavior and potential threats in cloud environments.</p>
+            <ul>
+              <li><b> Anomaly Detection:</b> These technologies can quickly identify abnormal activity, such as unauthorized access or data exfiltration.</li>
+            </ul>
+            <br><p><b>Serverless Security</b><br><br>Serverless computing abstracts infrastructure management, and while this improves
+scalability, it also introduces new security challenges, including securing API endpoints and handling vulnerabilities in shared environments.</p><br><br>
+            </ol>
+          <hr>
+          <h3>Let's Try This!</h3>
+          <p><b>Activity: "Cloud Quest – Explore the Cloud!"<br><br>Objective:</b></p>
+            
+          <p> By the end of the activity, students will be able to:</p>
+          <ul>
+            <li>Define cloud computing</li>
+            <li>Identify different types of cloud service models (IaaS, PaaS, SaaS)</li>
+            <li>Distinguish between public, private, and hybrid clouds</li>
+            <li> Give real-world examples of cloud services</li>
+            <p><b>Part 1: Cloud Concepts Matching Game<br><br>Instructions:</b><br><br>Match the concept on the left with the correct definitio on the right.
+              <table border = "1px">
+                <tr>
+                  <td>Concept</td>
+                  <td>Definition</td>
+                </tr>
+                <tr>
+                  <td>1. IaaS</td>
+                  <td>A. Software delivered over the internet, such as Google Docs</td>
+                </tr>
+                <tr>
+                  <td>2. PaaS</td>
+                  <td>B. Infrastructure like virtual machines, storage, and networks</td>
+                </tr>
+                <tr>
+                  <td>3. SaaS</td>
+                  <td>C. A platform for developers to build and deploy app</td>
+                </tr>
+                <tr>
+                  <td>4. Public Cloud</td>
+                  <td>D. Cloud resources owned by a third party, like AWS</td>
+                </tr>
+                <tr>
+                  <td>5. Private Cloud</td>
+                  <td>E. Cloud infrastructure used exclusively by one organization</td>
+                </tr>
+                <tr>
+                  <td>6. Hybrid Cloud</td>
+                  <td>F. A combination of both public and private cloud models</td>
+                </tr>
+            </table>
+            <hr>
+            <p><b>Part 2: Real-World Examples<br><br> Instructions:</b> Match the service to the correct category.</p>
+            <table border = "1px">
+              <tr>
+                <td>Service</td>
+                <td>Type (IaaS, PaaS, SaaS)</td>
+              </tr>
+              <tr>
+                <td> Google Workspace</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Heroku</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Microsoft Azure VMs</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Dropbox</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>AWS Elastic Beanstalk</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Zoom</td>
+                <td></td>
+              </tr>
+            </table>
+            <hr>
+            <p><b>Part 3: Think and Discuss</b><br><br>Answer these in 2–3 sentences:
+              <ol type = "1">
+                <li>What are the advantages of using cloud computing?</li>
+                <li>What concerns might a company have when moving to the cloud?</li>
+                <li>Give one example of how you or someone you know uses cloud computing in
+                  everyday life.</li>
+            </ol>
+            <p><b>Optional Extension:Hands-On</b><br><br>Use a free-tier service like <b>Google Cloud, AWS Educate, or Microsoft Azure for Students</b> to:
+              <ul>
+                <li>Create a virtual machine (IaaS)</li>
+                <li>Deploy a simple app using a PaaS platform</li>
+                <li>Explore cloud storage options (like Google Drive)</li>
+            </ul>
+        </section>
+  </div>
+</div>
+
+     <script src="sub.js"></script>
+</body>
+</html>

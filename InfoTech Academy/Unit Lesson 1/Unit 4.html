@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Lesson 1 - Unit 4</title>
+  <link rel="stylesheet" href="../Subjects/sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="module-container">
+        <br>
+        <hr>
+        <section>
+            <h3>UNIT IV: Network Devices – Routers, Switches, and Hubs</h3><hr>
+                <p>
+                    1. Hub<br>
+                    Definition:<br>
+                    A hub is a basic networking device that connects multiple devices in a LAN and forwards
+                    data to all ports, regardless of the intended recipient.</p>
+                <p>Characteristics:</p>
+                <table border="1px">
+                    <tr>
+                        <td>Feature</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>OSI Layer</td>
+                        <td>Layer 1 (Physical)</td>
+                    </tr>
+                    <tr>
+                        <td>Intelligence</td>
+                        <td>None – does not filter data</td>
+                    </tr>
+                    <tr>
+                        <td>Data Transmission</td>
+                        <td>Broadcasts to all devices</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>Typically 10/100 Mbps</td>
+                    </tr>
+                    <tr>
+                        <td>Full/Half Duplex</td>
+                        <td>Half-duplex only</td>
+                    </tr>
+                    <tr>
+                        <td>Use Case</td>
+                        <td>Very small or legacy networks</td>
+                    </tr>
+                </table>
+                <p>2. Switch<br>
+                Definition:<br>
+                A switch is a network device that connects devices within a LAN and uses MAC addresses
+                to intelligently forward data only to the appropriate destination device.</p>
+                <p>Characteristics:</p>
+                <table border="1px">
+                    <tr>
+                        <td>Feature</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>OSI Layer</td>
+                        <td>Layer 2 (Data Link)</td>
+                    </tr>
+                    <tr>
+                        <td>Intelligence</td>
+                        <td>Maintains a MAC address table</td>
+                    </tr>
+                    <tr>
+                        <td>Data Transmission</td>
+                        <td>Unicast to specific destination</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>10/100/1000 Mbps and above</td>
+                    </tr>
+                    <tr>
+                        <td>Full/Half Duplex</td>
+                        <td>Full duplex supported</td>
+                    </tr>
+                    <tr>
+                        <td>Use Case</td>
+                        <td>Modern home and business networks</td>
+                    </tr>
+                </table>
+                <p>Advanced Features:<br>
+                * VLAN Support: Segments network virtually<br>
+                * PoE (Power over Ethernet): Powers devices like IP cameras<br>
+                * Port Security: Limits devices per port<br>
+                * Managed vs Unmanaged: Managed switches allow configuration and monitoring</p>
+                <p>3. Router<br>
+                Definition:<br>
+                A router connects multiple networks together (e.g., home network to the Internet) and
+                routes data packets based on IP addresses.</p>
+                <p>Characteristics:</p>
+                <table border="1px">
+                    <tr>
+                        <td>Feature</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>OSI Layer</td>
+                        <td>Layer 3 (Network)</td>
+                    </tr>
+                    <tr>
+                        <td>Intelligence</td>
+                        <td>Uses routing tables and protocols</td>
+                    </tr>
+                    <tr>
+                        <td>Data Transmission</td>
+                        <td>Forwards packets between networks</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>Varies, often with built-in firewall and NAT</td>
+                    </tr>
+                    <tr>
+                        <td>Use Case</td>
+                        <td>Home internet, enterprise WANs, ISPs</td>
+                    </tr>
+                </table>
+                <p>Key Functions:<br>
+                * Assign IP addresses via DHCP<br>
+                * Translate addresses using NAT<br>
+                * Filter traffic using ACLs<br>
+                * Route selection using static or dynamic routing protocols</p>
+                <p>Types of Routers:<br>
+                * Core Router: High-speed, used in backbone networks<br>
+                * Edge Router: Connects internal networks to external ones (e.g., ISPs)<br>
+                * Wireless Router: Combines router and wireless access point (e.g., home routers)</p>
+                <p>4. Comparative Summary</p>
+                <table border="1px">
+                    <tr>
+                        <td>Feature</td>
+                        <td>Hub</td>
+                        <td>Switch</td>
+                        <td>Router</td>
+                    </tr>
+                    <tr>
+                        <td>OSI Layer</td>
+                        <td>Layer 1</td>
+                        <td>Layer 2</td>
+                        <td>Layer 3</td>
+                    </tr>
+                    <tr>
+                        <td>Address Type</td>
+                        <td>None</td>
+                        <td>MAC Address</td>
+                        <td>IP Address</td>
+                    </tr>
+                    <tr>
+                        <td>Data Forwarding</td>
+                        <td>Broadcast</td>
+                        <td>Unicast/Broadcast/Multicast</td>
+                        <td>Route based on IP, Collision Domain</td>
+                    </tr>
+                    <tr>
+                        <td>Broadcast Domain</td>
+                        <td>One</td>
+                        <td>One (can segment with VLANs) </td>
+                        <td>Each interface is separate</td>
+                    </tr>
+                    <tr>
+                        <td>Use Case</td>
+                        <td>Obsolete/legacy</td>
+                        <td>LAN communication </td>
+                        <td>DConnecting different networks</td>
+                    </tr>
+                    <tr>
+                        <td>Intelligence</td>
+                        <td>Dumb</td>
+                        <td>Smart</td>
+                        <td>Smart + Routing</td>
+                    </tr>
+                </table>
+                <p>5. Other Related Devices (Brief Overview)</p>
+                <table border="1px">
+                    <tr>
+                        <td>Device</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>Modem</td>
+                        <td>Modulates and demodulates signals for Internet access via ISP</td>
+                    </tr>
+                    <tr>
+                        <td>Access Point</td>
+                        <td>Extends wireless coverage in a network</td>
+                    </tr>
+                    <tr>
+                        <td>Firewall</td>
+                        <td>Filters traffic based on security rules</td>
+                    </tr>
+                    <tr>
+                        <td>Bridge</td>
+                        <td>Connects and filters traffic between two LAN segments</td>
+                    </tr>
+                </table>
+        </section><br><hr>
+            
+        <a href="../Subjects/lesson1.html" id="learn-btn"><h3>Back to Lesson 1</h3></a>
+      </div>
+    </div>
+    <script src="../Subjects/sub.js"></script>
+</body>
+</html>

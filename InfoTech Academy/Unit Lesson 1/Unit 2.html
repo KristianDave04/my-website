@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Lesson 1 - Unit 2</title>
+  <link rel="stylesheet" href="../Subjects/sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="module-container">
+                <br>
+        <hr>
+        <section>
+            <h3>UNIT II: OSI and TCP/IP Models</h3><hr>
+                <p>1. Purpose of Network Models<br>
+                Network models are conceptual frameworks used to understand and design how data is
+                transmitted across networks. They standardize communication functions to enable
+                interoperability among different systems and devices</p>
+                <p>A. OSI Model (Open Systems Interconnection Model)<br>
+                The OSI model has 7 layers, each with a distinct function.</p>
+                <table border="1px">
+                    <tr>
+                    <td>Name</td>
+                    <td>Application</td>
+                    <td>Presentation</td>
+                    <td>Session</td>
+                    <td>Transport</td>
+                    <td>Network</td>
+                    <td>Data Link</td>
+                    <td>Physical</td>
+                    </tr>
+                    <tr>
+                    <td>Description</td>
+                    <td>Interface for end-user processes.</td>
+                    <td>Data translation, encryption, compression</td>
+                    <td>Manages sessions and controls dialogues</td>
+                    <td>Ensures complete data transfer with error checking and flow control.</td>
+                    <td>Handles logical addressing and routing.</td>
+                    <td>Provides physical addressing (MAC), error detection.</td>
+                    <td>Transmits raw bit stream over physical medium.</td>
+                    </tr>
+                    <tr>
+                    <td>Protocols/Examples</td>
+                    <td>HTTP, FTP, SMTP</td>
+                    <td>JPEG, SSL, ASCII</td>
+                    <td>NetBIOS, PPTP</td>
+                    <td>TCP, UDP</td>
+                    <td>IP,ICMP,IPsec</td>
+                    <td>Ethernet, PPP, ARP</td>
+                    <td>Cables, Hubs, Fiber</td>
+                    </tr>
+                </table>     
+                 <p>Layer Functions Summary:<br>
+                * Layers 1–4: Deal with *data transport.<br>
+                * Layers 5–7: Deal with *application-level interactions.</p>
+                <p>Data Flow<br>
+                As data travels from sender to receiver, each layer adds or removes headers relevant to its
+                role – a process called encapsulation and decapsulation.</p>
+                <p>B. TCP/IP Model (Internet Protocol Suite)
+                The TCP/IP model is a more practical and widely used model. It has 4 layers, which
+                correspond loosely to the OSI model.</p>
+                <table border="1px">
+                    <tr>
+                        <td>Layer</td>
+                        <td>Description</td>
+                        <td>OSI Equivalent</td>
+                        <td>Protocols</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Application</td>
+                        <td>OSI Layers 5-7</td>
+                        <td>HTTP, FTP,DNS, SMTP</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Transport</td>
+                        <td>OSI Layer 4</td>
+                        <td>TCP,UDP</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Internet</td>
+                        <td>OSI Layer 3</td>
+                        <td>IP, ICMP</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Network Access</td>
+                        <td>OSI Layer 1-2</td>
+                        <td>Ethernet, Wi-Fi</td>
+                    </tr>
+                </table>
+                <p>Key Differences</p>
+                <table border="1px">
+                    <tr>
+                        <td>OSI Model</td>
+                        <td>TCP/IP Model</td>
+                    </tr>
+                    <tr>
+                        <td>7 layers</td>
+                        <td>4 layers</td>
+                    </tr>
+                    <tr>
+                        <td>Theoretical model</td>
+                        <td>Practical implementation</td>
+                    </tr>
+                    <tr>
+                        <td>Developed by ISO</td>
+                        <td>Developed by DARPA/DoD</td>
+                    </tr>
+                    <tr>
+                        <td>More detailed</td>
+                        <td>More simplified and real-world applicable</td>
+                    </tr>
+                </table>
+                <p>Common Protocols Explained<br>
+                * HTTP (HyperText Transfer Protocol): Transfers web pages.<br>
+                * FTP (File Transfer Protocol): Transfers files between systems.<br>
+                * TCP (Transmission Control Protocol): Reliable, connection-based communication.<br>
+                * UDP (User Datagram Protocol): Faster, connectionless communication.<br>
+                * IP (Internet Protocol): Provides logical addressing and routing.<br>
+                * DNS (Domain Name System): Resolves domain names to IP addresses</p>
+                <p>Encapsulation Example<br>
+                1. Application Layer: Creates a message (e.g., an email).<br>
+                2. Transport Layer: Breaks data into segments and adds port numbers.<br>
+                3. Internet Layer: Adds IP address to each segment.<br>
+                4. Network Access Layer: Adds MAC address and prepares the frame for transmission.</p>
+                <p>IP Addressing and Subnetting<br>
+                1. What is an IP Address?<br>
+                An IP addres (Internet Protocol address) is a unique identifier assigned to each device on a
+                network to enable communication.</p>
+                <p>* IPv4 Format: Four decimal numbers separated by dots (e.g., `192.168.1.1`)<br>
+                * IPv6 Format: Eight groups of four hexadecimal digits (e.g.,<br>
+                `2001:0db8:85a3:0000:0000:8a2e:0370:7334`)</p>
+                <p>2. Types of IP Addresses (IPv4)</p>
+                <table border="1px">
+                    <tr>
+                        <td>Type</td>
+                        <td>Description</td>
+                        <td>Example</td>
+                    </tr>
+                    <tr>
+                        <td>Private IP</td>
+                        <td>Used within local networks</td>
+                        <td>`192.168.x.x`, `10.x.x.x`</td>
+                    </tr>
+                    <tr>
+                        <td>Public IP</td>
+                        <td>Routable on the internet</td>
+                        <td>Assigned by ISP</td>
+                    </tr>
+                    <tr>
+                        <td>Static IP</td>
+                        <td>Manually configured and Unchanging.</td>
+                        <td>Common in servers</td>
+                    </tr>
+                    <tr>
+                        <td>Dynamic IP</td>
+                        <td>Assigned by DHCP, can change.</td>
+                        <td>Used by most home devices</td>
+                    </tr>
+                    <tr>
+                        <td>Loopback IP</td>
+                        <td>Used for internal testing</td>
+                        <td>`127.0.0.1`</td>
+                    </tr>
+                    <tr>
+                        <td>APIPA</td>
+                        <td>Auto-assigned if DHCP fails</td>
+                        <td>`169.254.x.x`</td>
+                    </tr>
+                </table>
+                <p>3. Classes of IPv4 Addresses</p>
+                <table border="1px">
+                    <tr>
+                        <td>Class</td>
+                        <td>Range</td>
+                        <td>Default Subnet Mask</td>
+                        <td>Use Case</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>1.0.0.0 – 126.0.0.0</td>
+                        <td>255.0.0.0</td>
+                        <td>Large networks</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>128.0.0.0 – 191.255.0.0</td>
+                        <td>255.255.0.0</td>
+                        <td>Medium networks</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>192.0.0.0 – 223.255.255.0</td>
+                        <td>255.255.255.0</td>
+                        <td>Small networks</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>224.0.0.0 – 239.255.255.255</td>
+                        <td>-</td>
+                        <td>Multicast</td>
+                    </tr>
+                    <tr>
+                        <td>E</td>
+                        <td>240.0.0.0 – 255.255.255.255</td>
+                        <td>-</td>
+                        <td>Experimental</td>
+                    </tr>
+                </table>
+                <ul>
+                    <li>Note: 127.x.x.x is reserved for loopback testing.</li>
+                </ul>
+                <p>4. Subnetting Basics<br>
+                -Subnetting is the process of dividing a larger network into smaller, manageable segments (subnets).<br>
+                -It improves performance and enhances security.</p>
+                <p>Key Concepts:</p>
+                <ul>
+                    <li>Subnet Mask: Determines the network and host portion of the IP address.</li>
+                </ul>
+                <p>* Example: `255.255.255.0`<br>
+                * CIDR Notation: Represents subnet using slash format (e.g., `192.168.1.0/24`)<br>
+                * Network Address: First address in the subnet (e.g., `192.168.1.0`)<br>
+                * Broadcast Address: Last address in the subnet (e.g., `192.168.1.255`)<br>
+                * Usable IP Range: Between network and broadcast address (e.g., `192.168.1.1 –
+                192.168.1.254`)</p>
+                <p>5. Calculating Subnets<br>
+                Example:<br>
+                Given: IP – `192.168.1.0/26`<br>
+                * Subnet mask: `255.255.255.192`<br>
+                * Number of subnets: 4<br>
+                * Hosts per subnet: 62 usable (64 total – 2 for network and broadcast)<br>
+                * Subnets:<br>
+                * `192.168.1.0/26` → Hosts: `192.168.1.1 – 192.168.1.62`<br>
+                * `192.168.1.64/26` → Hosts: `192.168.1.65 – 192.168.1.126`<br>
+                * etc.<br><br>
+                Formulae:<br>
+                * Number of Subnets = 2^n (n = number of borrowed bits)<br>
+                * Number of Hosts = 2^h – 2 (h = number of host bits left)</p>
+                <p>6. Binary Notation and Subnetting<br>
+                Understanding binary is key to subnetting:<br>
+                * Decimal: `192` → Binary: `11000000`<br>
+                * IP: `192.168.1.0` → Binary: `11000000.10101000.00000001.00000000`<br>
+                * Subnet Mask: `255.255.255.0` → Binary: `11111111.11111111.11111111.00000000`</p>
+                <p>7. IPv6 Overview (Introductory Level)<br>
+                * 128-bit addresses (vs 32-bit in IPv4)<br>
+                * Written in hexadecimal, separated by colons<br>
+                * Designed to solve IPv4 exhaustion<br>
+                * Example: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`</p>
+                <p>8. Subnetting Tools s Practice<br>
+                * CIDR Charts<br>
+                * Subnet Calculators<br>
+                * Practice tools: Cisco Packet Tracer, SubnettingQuestions.com</p>
+            </section><br><hr>
+
+        <a href="../Subjects/lesson1.html" id="learn-btn"><h3>Back to Lesson 1</h3></a>
+      </div>
+    </div>
+    <script src="../Subjects/sub.js"></script>
+</body>
+</html>

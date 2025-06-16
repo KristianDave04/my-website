@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Lesson 2 - Unit 5</title>
+  <link rel="stylesheet" href="../Subjects/sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="module-container">
+        <br>
+        <hr>
+        <section>
+                <h3>UNIT V: Responsive Web Design (RWD)</h3><hr>
+                <p><b>Responsive Web Design (RWD)</b> is an approach to web design that ensures a
+                website’s content and layout adapt to various screen sizes and devices. It involves using
+                flexible layouts, images, and CSS media queries to create a seamless user experience on
+                devices ranging from desktops to smartphones.</p>
+                <p><b>Key Concepts of Responsive Web Design:</b><br>
+                <b>1. Fluid Grid Layouts:</b> Instead of using fixed-width layouts, fluid grids use percentages
+                for widths of elements. This ensures elements scale proportionally based on the
+                screen size.;<br>
+                <b>2. Flexible Images:</b> Images should be responsive to adjust their size relative to the
+                screen size. The `max-width` property is commonly used to make images scale
+                down without overflowing their container.;<br>
+                <b>3. Media Queries:</b> Media queries are a core part ofresponsive design. They allow you
+                to apply different styles based on various factors like screen width, height,
+                resolution, and orientation.</p>
+                <p><b>1. What are Media Queries?</b><br>
+                A Media Query is a CSS technique used to apply styles based on certain conditions like the
+                viewport’s width, height, or device orientation. Media queries allow you to target different
+                screen sizes and make adjustments to your layout without changing the underlying HTML
+                structure.</p>
+                <p><b>Syntax of Media Query:</b><br>
+                * media-type: Specifies the media type (like `screen`, `print`, etc.), although `screen` is
+                the most commonly used.<br>
+                * condition: Defines the condition for applying the CSS rules (e.g., `max-width`, `minwidth`, 
+                `orientation`, `resolution`, etc.)</p>
+                <p><b>2. Common Media Queries and Conditions:</b><br>
+                • max-width and min-width: These are the most common conditions used in
+                responsive design. They set styles based on the viewport’s width.;<br>
+                * max-width: Styles apply when the viewport is smallerthan or equalto the specified width.;<br>
+                * min-width: Styles apply when the viewport is largerthan or equalto the specified width.;<br>
+                • `resolution`: Specifies the pixel density or resolution of the device. It’s often used;<br>
+                for targeting high-DPI screens, like Retina displays.;<br>
+                • `aspect-ratio`: Allows you to apply styles based on the ratio of width to height of
+                the viewport.</p>
+                <p><b>3. Using Media Queries in Practice:</b><br>
+                <b>Example 1: Basic Media Queries for Layout Adjustment</b></p>
+                <table border="1px">
+                    <tr>
+                        <td>
+                            /* Default styles for large screens */<br>
+                            Body {<br>
+                            Font-size: 16px;<br>
+                            Background-color: #f0f0f0;<br>
+                            }<br><br>
+                            /* Styles for medium screens (tablets) */<br>
+                            @media screen and (max-width: 1024px){<br>
+                            Body {<br>
+                            Font-size: 14px;<br>
+                            }<br>
+                            }<br><br>
+                            /* Styles for small screens (smartphones) */<br>
+                            @media screen and (max-width: 600px) {<br>
+                            Body {<br>
+                            Font-size: 12px;<br>
+                            }<br>
+                            }
+                        </td>
+                    </tr>
+                </table>
+                <p><b>In the above example:</b><br>
+                * The default styles are applied to large screens.<br>
+                * The styles inside the `@media screen and (max-width: 1024px)` block apply when the
+                screen is 1024px or smaller (typically tablets).<br>
+                * The styles inside the `@media screen and (max-width: 600px)` block apply when the
+                screen is 600px or smaller (typically smartphones).</p>
+                <p><b>4. Responsive Design with Viewport Meta Tag</b><br>
+                In addition to using media queries, the viewport meta tag is crucial for responsive
+                design. It tells the browser how to control the pages dimensions and scaling.<br><br>
+                * width=device-width: Sets the width of the viewport to match the devices width.<br>
+                *initial-scale=1.0: Sets the initial zoom level to 1, ensuring that the page is not zoomed in
+                or out initially.</p>
+                <p><b>5. Best Practices for Responsive Web Design</b><br>
+                <b>Use Fluid Layouts:</b><br>
+                Avoid fixed widths. Use relative units like percentages (%) or viewport units (vw, vh) instead of pixels so 
+                that your layout adjusts smoothly across different screen sizes.<br><br>
+                <b>Utilize Media Queries:</b><br>
+                Use CSS media queries to apply different styles based on device characteristics such as
+                screen width, resolution, or orientation. This allows your website to adapt to desktops, 
+                tablets, and smartphones.<br><br>
+                <b>Flexible Images and Media:</b><br>
+                Make images and other media scale within their containers by using max-width: 100%; 
+                height: auto;. This prevents overflow and ensures content stays within the viewport.<br><br>
+                <b>Mobile-First Design:</b><br>
+                Start designing for the smallest screens first, then scale up using media queries. 
+                This approach ensures better performance and a solid user experience on mobile devices.<br><br>
+                <b>Use Responsive Frameworks:</b><br>
+                Consider using CSS frameworks like Bootstrap, Tailwind CSS, or Foundation. These come 
+                with built-in responsive grid systems and components that save time and effort.<br><br>
+                <b>Avoid Absolute Positioning:</b><br>
+                Try not to rely too much on absolute positioning, which can break layouts on smaller screens. 
+                Use flexbox or grid for more adaptable layouts.<br><br>
+                <b>Test Across Devices:</b><br>
+                Always test your site on real devices and emulators to ensure it looks and behaves correctly
+                on various screen sizes and operating systems.<br><br>
+                <b>Optimize for Touch:</b><br>
+                Make sure buttons are large enough to tap easily and that interactive elements are spaced 
+                out to prevent accidental taps on touch devices.</p>
+             </section><br><hr>
+            
+        <a href="../Subjects/lesson2.html" id="learn-btn"><h3>Back to Lesson 2</h3></a>
+      </div>
+    </div>
+    <script src="../Subjects/sub.js"></script>
+</body>
+</html>

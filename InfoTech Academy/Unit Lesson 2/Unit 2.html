@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoTech - Lesson 2 - Unit 2</title>
+  <link rel="stylesheet" href="../Subjects/sub.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/SidebarLOgo (1)" href="../Image/SidebarLOgo (1).ico">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="..\Image\SidebarLOgo.jpg" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="main">InfoTech</span>
+            <span class="sub">Academy</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/dashboard.html">
+                <i class="bx bx-bar-chart-alt-2 icons"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link active">
+              <a href="../Course/course.html">
+                <i class="bx bx-book icons"></i>
+                <span class="text nav-text">Courses</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+        <li class="nav-link">
+          <a href="../Contact/contact.html">
+            <i class='bx bx-envelope icons'></i>
+            <span class="text nav-text">Contact</span>
+          </a>
+        </li>
+
+          <li class="nav-link">
+            <a href="../Service/Service.html">
+              <i class='bx bx-cog icons'></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+            <li class="nav-link">
+              <a href="../About US/Aboutus.html">
+                <i class='bx bx-group icons'></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+
+          <li class="nav-link">
+             <a href="../LoginRegister.html" id="logoutBtn">
+             <i class="bx bx-log-out icons"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icons moon"></i>
+              <i class="bx bx-sun icons sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+    <p class="text">&copy; 2025 InfoTech</p>
+    <p class="text">All rights reserved</p>
+  </div>
+</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="module-container">
+                <br>
+        <hr>
+        <section>
+<h3>UNIT II: CSS Styling and Flex/Grid Layout</h3><hr>
+                <p><b>1. Introduction to CSS (Cascading Style Sheets)</b><br>
+                <b>What is CSS?</b><br>
+                * CSS is the language used to describe the presentation of HTML documents, including
+                layout, design, and visual effects.<br>
+                *It allows you to controlthe color, font, spacing, positioning, and responsiveness ofthe
+                elements in an HTML page</p>
+                <p><b>Why use CSS?</b><br>
+                * Separation of content and style: CSS enables you to separate HTML structure from its
+                presentation, making the web pages cleaner and easier to maintain.<br>
+                * Consistency: With CSS, you can apply the same styles across multiple pages, ensuring
+                consistent design.</p>
+                <p><b>2. CSS Syntax</b><br>
+                CSS follows a simple structure of selectors, properties, and values.</p>
+                <table border="1px">
+                    <tr>
+                        <td>
+                            H1 {<br>
+                            color: blue;<br>
+                            font-size: 32px;<br>
+                            }
+                        </td>
+                    </tr>
+                </table>
+                <p>* <b>Selector:</b> `h1` refers to all `&lt;h1&gt;` elements in the document.<br>
+                * <b>Property:</b> `color` is the property being styled.<br>
+                * <b>Value:</b> `blue` is the value being applied to the color property.</p>
+                <p><b>3. Types of CSS</b><br>
+                <b>Inline CSS:</b><br>
+                • Directly written inside the HTML element using the `style` attribute.</p>
+                <table border="1px">
+                    <tr>
+                        <td>
+                            &lt;h1 style=”color: red;”&gt;This is a Red Heading&lt;/h1&gt;
+                        </td>
+                    </tr>
+                </table>
+                <p><b>Internal CSS:</b><br>
+                • Written within `&lt;style&gt;` tags inside the `&lt;head&gt;` section of the document</p>
+                 <table border="1px">
+                    <tr>
+                        <td>
+                            &lt;head&gt;<br>
+                            &lt;style&gt;<br>
+                            H1 {<br>
+                            Color: green;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;
+                        </td>
+                    </tr>
+                </table>
+                <p><b>External CSS:</b><br>
+                • Stored in a separate `.css` file and linked to the HTML document.</p>
+                 <table border="1px">
+                    <tr>
+                        <td>
+                            &lt;link rel=”stylesheet” href=”styles.css”&gt;
+                        </td>
+                    </tr>
+                </table>
+                <p><b>4. CSS Selectors</b><br>
+                Selectors target HTML elements to apply styles. Some common types of selectors include:</p>
+                <table border="1px">
+                    <tr>
+                        <td><b>Selector Type</b></td>
+                        <td><b>Description</b></td>
+                    </tr>
+                    <tr>
+                        <td>Element Selector</td>
+                        <td>Targets elements by their tag name (`h1`, `p`)</td>
+                    </tr>
+                    <tr>
+                        <td>Class Selector</td>
+                        <td>Targets elements with a specific class (`.class-name`)</td>
+                    </tr>
+                    <tr>
+                        <td>ID Selector</td>
+                        <td>Targets an element with a specific `id` (`#id-name`)</td>
+                    </tr>
+                    <tr>
+                        <td>Universal Selector</td>
+                        <td>Targets all elements in the document (`*`)</td>
+                    </tr>
+                    <tr>
+                        <td>Attribute Selector</td>
+                        <td>Targets elements based on attributes (e.g., `[type=”text”]`)</td>
+                    </tr>
+                </table>
+                <p><b>Examples</b></p>
+                <table border="1px">
+                    <tr>
+                        <td>
+                            /* Element selector*/<br>
+                            H1 {<br>
+                            font-size: 2rem;<br>
+                            }<br><br>
+                            /* Class selector */<br>
+                            .button {<br>
+                            background-color: blue;<br>
+                            color: white;<br>
+                            }<br><br>
+                            /*ID selector*/<br>
+                            #header {<br>
+                            background-color: lightgray;<br>
+                            }<br><br>
+                            /* Attribute selector */<br>
+                            input[type=”text”] {<br>
+                            border: 2px solid gray;<br>
+                            }
+                        </td>
+                    </tr>
+                </table>
+                <p><b>5. CSS Box Model</b><br>
+                <b>All HTML elements are viewed as rectangular boxes. The box model includes:</b><br><br>
+                <b>1. Contentl:</b> The actual content (e.g., text or images).<br>
+                <b>2. Padding:</b> Space between the content and the border.<br>
+                <b>3. Border:</b> Surrounds the padding (optional).<br>
+                <b>4. Margin:</b> Space outside the border between elements.<br><br>
+                * The `margin` creates space outside the box (20px).<br>
+                * The `padding` creates space inside the box (15px).<br>
+                * The `border` wraps around the padding and content (5px thick).</p>
+                <p><b>6. Flexbox Layout</b><br><br>
+                <b>What is Flexbox?</b><br>
+                * Flexbox (Flexible Box)is a one-dimensional layout modelfor distributing space between
+                items in a container, either in a row or a column.<br>
+                *It helps align and distribute space within items, even when their sizes are unknown or
+                dynamic.</p>
+                <p><b>Key Flexbox Properties:</b><br>
+                For the container:<br>
+                * `display: flex` — Defines the container as a flex container.<br>
+                * `flex-direction: row | column` — Defines the direction of items (row or column).<br>
+                * `justify-content: flex-start | flex-end | center | space-between | space-around` — Aligns
+                items along the main axis.<br>
+                * `align-items: flex-start | flex-end | center | stretch` — Aligns items along the cross axis.</p>
+                <p><b>For the items:</b><br>
+                * `flex-grow` — Defines how much an item can grow relative to the other items.<br>
+                * `flex-shrink` — Defines how much an item can shrink if the container size is reduced.<br>
+                * `flex-basis` — Defines the initial size of an item before the available space is distributed.</p>
+                <p><b>Example of Flexbox Layout:</b></p>
+                <table border="1px">
+                    <tr>
+                        <td>
+                            ```css<br><br>
+                            .container {<br>
+                            Display: flex;<br>
+                            Justify-content: space-between; /* Distribute space between items */<br>
+                            }<br><br>
+                            .item {<br>
+                            Width: 100px;<br>
+                            Height: 100px;<br>
+                            Background-color: lightblue;<br>
+                            }<br>
+                            ```
+                        </td>
+                        <td>
+                            ```html<br><br>
+                            &lt;div class=”container”&gt;<br>
+                            &lt;div class=”item”&gt;&lt;/div&gt;<br>
+                            &lt;div class=”item”&gt;&lt;/div&gt;<br>
+                            &lt;div class=”item”&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            ```
+                        </td>
+                    </tr>
+                </table>
+             </section><br><hr>
+
+        <a href="../Subjects/lesson2.html" id="learn-btn"><h3>Back to Lesson 2</h3></a>
+      </div>
+    </div>
+    <script src="../Subjects/sub.js"></script>
+</body>
+</html>
