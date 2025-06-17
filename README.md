@@ -3,4 +3,10 @@ InfoTech Academy - an learning meets innovation! We believe learning should be e
 
 This project is only a final project for our courses, ITEC50. For educational purposes only. 
 
+Group Members:
+Argate, Kristian Dave B.
+Encaja, Maryjane
+Fernandez, Mark John G.
+Lintad, Paul Edward Tabing
+Magada, Rizalyn
 BSIT-1B
